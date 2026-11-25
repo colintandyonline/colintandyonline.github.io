@@ -5,68 +5,10 @@
 <meta name="theme-color" content="#081425">
 <meta name="description" content="CT DIGITAL GROUP public development roadmap: source-backed milestones, verified historical evidence and progress across public engineering projects.">
 <title>Public Development Roadmap | CT DIGITAL GROUP</title>
-<style>
-:root{color-scheme:dark;--bg:#081425;--line:#294965;--cyan:#50d6ec;--muted:#abc3d8;--text:#edf6ff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(ellipse at 80% 2%,#16415f 0,transparent 35%),radial-gradient(ellipse at 10% 78%,#112947 0,transparent 40%),var(--bg);min-height:100vh}
-a{color:#8ceaff}a:hover{color:#fff}a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #f5d57f;outline-offset:3px}
-header,main,footer{max-width:1220px;margin:auto;padding:24px}
-header{display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
-.brand{font-size:1.02rem;font-weight:800;letter-spacing:.1em;text-decoration:none;color:#fff}
-nav{display:flex;gap:9px;flex-wrap:wrap}nav a{padding:9px 13px;background:#112b42;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:.89rem}nav a[aria-current]{border-color:var(--cyan);background:#16506c;color:#fff}
-main{padding-bottom:72px}
-.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(240px,.75fr);gap:25px;align-items:center;padding:42px 36px;margin:14px 0 28px;background:linear-gradient(135deg,#142b44ed,#0b1e33f5);border:1px solid #32627e;border-radius:24px;box-shadow:0 20px 80px #02091255;overflow:hidden}
-.hero:after{content:"";position:absolute;right:-90px;top:-150px;width:350px;height:350px;background:#08b7d71a;filter:blur(38px);border-radius:50%;pointer-events:none}
-.eyebrow{font-size:.73rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#65cfea}
-h1{font-size:clamp(2rem,5vw,3.8rem);line-height:1.1;letter-spacing:-.045em;margin:12px 0 20px}
-h2{font-size:clamp(1.4rem,2.7vw,2.1rem);line-height:1.2;letter-spacing:-.02em;margin:8px 0}
-h3{font-size:1.08rem;margin:6px 0 9px}p{margin:8px 0 14px;color:var(--muted)}
-.hero img{display:block;width:100%;border-radius:14px;object-fit:contain;box-shadow:0 10px 30px #0003}
-.action{display:inline-block;border:1px solid #47cce4;border-radius:12px;padding:10px 17px;font-weight:700;text-decoration:none;background:#13465e;color:#f2fbff}.action:hover{background:#226482}
-main section{margin:31px 0}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:17px}
-.panel{background:#10253bdc;border:1px solid var(--line);border-radius:18px;padding:22px}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.metric-label{font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
-.metric-value{display:block;font-size:clamp(1.6rem,3vw,2.6rem);font-weight:850;color:white;line-height:1.25}
-.metric-foot{display:block;color:var(--muted);font-size:.82rem;margin-top:7px}
-.charts{display:grid;grid-template-columns:1.1fr 1fr;gap:16px;margin-top:16px}
-.chart-row{display:grid;grid-template-columns:101px 1fr 35px;gap:12px;align-items:center;margin:12px 0;font-size:.9rem}
-.track{height:12px;border-radius:999px;background:#28425b;overflow:hidden}.fill{height:100%;border-radius:999px;transition:width .4s ease}
-.stages{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
-.chip{font-size:.78rem;border:1px solid #40627b;background:#203c52;padding:4px 9px;border-radius:999px;color:#dce9f4;white-space:nowrap}
-.chip.complete{border-color:#54aa9a;color:#9eeadc;background:#123f3e}.chip.progress{border-color:#65bde3;color:#b5e9ff;background:#17394f}.chip.planned{border-color:#ad9dc1;color:#e1cafa;background:#3a294c}
-.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.project-card{border:1px solid var(--line);border-top:4px solid var(--project,#50d6ec);border-radius:16px;background:linear-gradient(150deg,#153047d9,#101f35d9);padding:20px}
-.project-card p{font-size:.9rem}.project-card a{font-weight:700}.project-top{display:flex;justify-content:space-between;gap:12px}
-.symbol{width:12px;height:12px;border-radius:50%;background:var(--project);flex:none;margin-top:10px}
-.project-card small{display:block;color:var(--muted)}
-.controls{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:12px}
-label{display:block;color:#d5eafa;font-size:.88rem;font-weight:700;margin-bottom:6px}
-select,input{width:100%;background:#10263d;border:1px solid #4c708a;border-radius:11px;padding:12px;color:#f2f8ff;font:inherit}input::placeholder{color:#9ab4c9}
-.milestone-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}
-.milestone{border:1px solid var(--line);border-left:4px solid var(--project,#50d6ec);border-radius:14px;padding:18px;background:#11273c}
-.milestone-top{display:flex;justify-content:space-between;gap:10px;align-items:start;flex-wrap:wrap}
-.milestone h3{margin:4px 0}.milestone .detail{font-size:.86rem}.milestone .meta{font-size:.82rem;color:#aacae3}
-.timeline{display:grid;gap:0;margin-top:16px}
-.timeline-entry{display:grid;grid-template-columns:158px 22px 1fr;align-items:start;gap:16px;padding:5px 0 19px}
-.timeline-date{font-weight:800;color:#b4e5f5;font-size:.89rem}
-.timeline-line{align-self:stretch;position:relative;border-left:2px solid #35617e;margin-left:10px}
-.timeline-line:before{content:"";position:absolute;top:5px;left:-7px;width:12px;height:12px;border-radius:50%;background:var(--project,#50d6ec);box-shadow:0 0 0 3px #122b42}
-.timeline-body{border:1px solid var(--line);border-radius:12px;padding:12px 16px;background:#122c42}.timeline-body strong{color:#fff}.timeline-body p{font-size:.86rem;margin:3px 0}
-.note{color:#b6cddf;font-size:.88rem}.updated{color:#a9cada;font-size:.85rem}
-.empty{padding:26px;border:1px dashed #63849a;border-radius:14px;color:var(--muted)}
-[hidden]{display:none!important}
-footer{border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero img{max-height:210px}.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:650px){header,main,footer{padding:16px}.hero{padding:24px 18px}.charts,.milestone-list,.controls,.project-grid{grid-template-columns:1fr}.timeline-entry{grid-template-columns:94px 15px 1fr;gap:8px}.timeline-date{font-size:.75rem}.timeline-body{padding:10px}.chart-row{grid-template-columns:92px 1fr 28px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fill{transition:none}}
-</style>
+<link rel="stylesheet" href="showcase.css">
 </head>
 <body>
-<header><a class="brand" href="https://ctdigital.group/">CT DIGITAL GROUP</a><nav aria-label="Engineering navigation">
-<a href="./">Showcase</a><a href="./#projects">Projects</a><a href="./#technology">Technology</a><a href="roadmap.html" aria-current="page">Roadmap</a><a href="./#community">Community</a><a href="./#sponsorship">Sponsor</a>
-</nav></header>
+<header><a class="brand" href="./"><img src="assets/ctdg-brand.png" alt="CT DIGITAL GROUP"></a><nav aria-label="Engineering navigation"><a href="./">Showcase</a><a href="./#projects">Projects</a><a href="./#engineering">Engineering</a><a href="./#technology">Technology</a><a href="roadmap.html" aria-current="page">Roadmap</a><a href="./#community">Community</a><a href="./#sponsorship">Sponsor</a></nav></header>
 <main>
 <section class="hero" aria-labelledby="heading"><div><span class="eyebrow">Engineering / Development intelligence</span>
 <h1 id="heading">Public development roadmap</h1>
