@@ -7,7 +7,7 @@ const roadmap=JSON.parse(fs.readFileSync("roadmap.json","utf8"));
 const check=process.argv.includes("--check");
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const icon=n=>'<svg class="ctdg-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#'+n+'"></use></svg>';
-const tabs=[["/","house","Showcase"],["/projects/","folder-code","Work portfolios"],["/intelligence/","chart-no-axes-combined","Intelligence"],["/ecosystem/","layers","Technology"],["/roadmap.html","calendar-range","Roadmap"],["/#community","users","Community"],["/#sponsorship","heart-handshake","Sponsor"],["/docs/","book-open","Docs"],["/services/","code-xml","Services"]];
+const tabs=[["/","house","Showcase"],["/projects/","folder-code","Work portfolios"],["/intelligence/","chart-no-axes-combined","Intelligence"],["/ecosystem/","layers","Technology"],["/roadmap.html","calendar-range","Roadmap"],["/#community","users","Community"],["/#sponsorship","heart-handshake","Sponsor"],["/docs/","book-open","Docs"],["/services/","code-xml","Services"],["/contact/","mail","Contact"]];
 const nav=active=>'<header><a class="brand" href="/"><img src="/assets/ctdg-logo.png" alt=""><span>CT DIGITAL GROUP<small>ENGINEERING / INNOVATION</small></span></a><nav aria-label="Engineering navigation">'+tabs.map(([url,i,label])=>'<a href="'+url+'"'+(url===active?' aria-current="page"':'')+'>'+icon(i)+'<span>'+label+'</span></a>').join("")+'</nav></header>';
 const tech=[...new Set(records.flatMap(p=>p.stack))].sort();
 const status=p=>roadmap.items.find(m=>m.project===p.project)?.lifecycle||"Not verified";
