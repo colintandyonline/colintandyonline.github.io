@@ -15,7 +15,7 @@ export default {
     if (url.hostname !== HOST) return reply("Not found", 404);
     if (!["GET", "HEAD"].includes(request.method))
       return reply("Method not allowed", 405, {Allow: "GET, HEAD"});
-    if (url.pathname === "/") url.pathname = "/index.html";
+    if (url.pathname.endsWith("/")) url.pathname += "index.html";
     if (url.pathname.split("/").some(part => part.startsWith(".")))
       return reply("Not found", 404);
     const response = await env.ASSETS.fetch(new Request(url, request));

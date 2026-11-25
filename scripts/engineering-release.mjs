@@ -9,7 +9,7 @@ const host = "engineering.ctdigital.group";
 const name = "ctdg-engineering-innovation";
 const repo = "https://github.com/colintandyonline/colintandyonline.github.io";
 const workerPath = "worker/engineering.mjs";
-const paths = ["index.html", "roadmap.html", "roadmap.js", "roadmap.json", "showcase.css", "showcase.js", "assets/ctdg-logo.png"];
+const paths = ["index.html", "roadmap.html", "roadmap.js", "roadmap.json", "showcase.css", "showcase.js", "assets/ctdg-logo.png", "portfolio.css", "portfolio.js", "projects/index.html", "projects/ctdg-website/index.html", "projects/interactive-demos/index.html", "projects/kayacart/index.html", "projects/gandalf-mobile/index.html", "projects/axiom-architect/index.html", "projects/deepmind-resources/index.html", "projects/trailtrade/index.html"];
 const types = {".html":"text/html; charset=utf-8", ".js":"text/javascript; charset=utf-8", ".json":"application/json; charset=utf-8", ".css":"text/css; charset=utf-8", ".png":"image/png"};
 const git = (...args) => execFileSync("git", args, {cwd:root, maxBuffer:16*1024*1024});
 const commit = git("rev-parse", "HEAD").toString().trim();
@@ -42,7 +42,7 @@ function validateSource(){
   assert.equal(data.schemaVersion,1);
   assert.equal(data.source.projectNumber,11);
   assert.ok(data.items.length > 0 && data.items.every(item => typeof item.title === "string" && ["Completed","In progress","Planned"].includes(item.stage)));
-  for (const path of ["/roadmap.js","/showcase.js"]) new Function(files.get(path).toString("utf8"));
+  for (const path of ["/roadmap.js","/showcase.js","/portfolio.js"]) new Function(files.get(path).toString("utf8"));
   assert.equal(files.get("/assets/ctdg-logo.png").subarray(0,8).toString("hex"),"89504e470d0a1a0a");
 }
 
@@ -53,12 +53,12 @@ async function validateWorker(){
     return bytes ? new Response(request.method==="HEAD"?null:bytes,{headers:{"Content-Type":types[extname(new URL(request.url).pathname)]}}) : new Response("Not found",{status:404});
   }}};
   const req = (path,method="GET",hostname=host) => module.default.fetch(new Request("https://"+hostname+path,{method}),env);
-  for (const path of ["/",...files.keys()]) {
+  for (const path of ["/","/projects/","/projects/kayacart/",...files.keys()]) {
     const response = await req(path);
     assert.equal(response.status,200,path);
     assert.equal(response.headers.get("X-CTDG-Source-Commit"),commit);
     assert.equal(response.headers.get("X-Robots-Tag"),"noindex");
-    assert.deepEqual(Buffer.from(await response.arrayBuffer()),files.get(path==="/"?"/index.html":path));
+    assert.deepEqual(Buffer.from(await response.arrayBuffer()),files.get(path.endsWith("/")?path+"index.html":path));
   }
   const head = await req("/","HEAD");
   assert.equal(head.status,200);assert.equal((await head.arrayBuffer()).byteLength,0);
@@ -117,7 +117,7 @@ function versionBody(completion){
 }
 async function smoke(){
   for (const [path, bytes] of files) {
-    const requestPath=path==="/index.html"?"/":path;
+    const requestPath=path.endsWith("/index.html")?path.slice(0,-"index.html".length):path;
     const response=await fetch("https://"+host+requestPath+"?release="+commit,{redirect:"error",signal:AbortSignal.timeout(20000),cache:"no-store"});
     assert.equal(response.status,200,requestPath);
     assert.equal(response.headers.get("X-CTDG-Source-Commit"),commit,requestPath+" source commit");
@@ -181,7 +181,7 @@ async function deploy(){
   }
 }
 try {
-  validateSource();await validateWorker();
+  validateSource();execFileSync(process.execPath, ["scripts/generate-portfolios.mjs","--check"], {cwd:root,stdio:"inherit"});await validateWorker();
   const action=process.argv[2]||"check";
   if(action==="deploy")await deploy();
   else if(action==="smoke")await smoke();

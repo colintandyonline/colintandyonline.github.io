@@ -1,0 +1,307 @@
+[
+  {
+    "slug": "ctdg-website",
+    "project": "CTDG Website",
+    "title": "CTDG Website & Cora",
+    "repo": "CTDG-Website",
+    "sha": "848adbe040bde14fdb8bbea5dbb6c1799ef33260",
+    "color": "#F38020",
+    "stack": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Cloudflare Workers"
+    ],
+    "domain": "Conversational AI / Edge web",
+    "summary": "A corporate web experience that makes AI-enabled business capabilities understandable and provides a voice-and-chat reception entry point.",
+    "problem": "Connect business content, practical demonstrations and enquiry journeys in a coherent, responsive experience without treating AI as a decorative widget.",
+    "architecture": [
+      "Website visitor",
+      "Cloudflare Worker",
+      "Website and Cora integration"
+    ],
+    "engineering": [
+      "The public repository documents an edge-hosted website rather than a GitHub Pages application.",
+      "The public README describes the deep-navy and cyan interface, voice-and-chat reception and search-friendly structure. The Worker source was imported from production on 21 November 2026.",
+      "A JavaScript verification workflow is present in the repository. This source snapshot does not establish the current live behavior of every feature."
+    ],
+    "evidence": [
+      [
+        "Worker source",
+        "worker.js"
+      ],
+      [
+        "Project architecture and scope",
+        "README.md"
+      ],
+      [
+        "Worker verification workflow",
+        ".github/workflows/verify-worker.yml"
+      ]
+    ],
+    "boundary": "Public original source baseline. Production changes after the import may differ; no live conversation reliability, lead-conversion or performance claim is made here.",
+    "live": "https://ctdigital.group/"
+  },
+  {
+    "slug": "interactive-demos",
+    "project": "Interactive Demos",
+    "title": "Interactive Demos",
+    "repo": "CTDG-Interactive-Demos-Public",
+    "sha": "fa9960e46802df1322aa36bb70ae608a8e374214",
+    "color": "#F38020",
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "domain": "Interactive UX / Demonstrations",
+    "summary": "Public-facing demonstrations make AI reception and service journeys tangible through browser-based experiences.",
+    "problem": "Show what an automation or conversational service feels like in practice rather than relying on a static service description.",
+    "architecture": [
+      "Browser entry",
+      "Demonstration page",
+      "Interactive guided experience"
+    ],
+    "engineering": [
+      "The selected public edition contains historical standalone HTML pages for the receptionist demonstration and guided services tour.",
+      "The browser-facing pages provide concrete interface evidence while leaving production integrations in the canonical private implementation.",
+      "The public edition is a controlled one-way source showcase, not a development branch or the current live site."
+    ],
+    "evidence": [
+      [
+        "Demonstration entry",
+        "index.html"
+      ],
+      [
+        "Receptionist demonstration",
+        "ai-receptionist/index.html"
+      ],
+      [
+        "Guided services tour",
+        "services-tour/index.html"
+      ]
+    ],
+    "boundary": "Selected historical public-facing source; the live experience is separate. Do not infer a working backend, service integration or full production parity from the selected pages.",
+    "live": "https://ctdigital.group/interactive/services-tour"
+  },
+  {
+    "slug": "kayacart",
+    "project": "KayaCart",
+    "title": "KayaCart",
+    "repo": "KayaCart-Public",
+    "sha": "ca670d4751ba71601c34a55220795d1351917401",
+    "color": "#7F52FF",
+    "stack": [
+      "Kotlin",
+      "Android",
+      "Jetpack Compose",
+      "JavaScript",
+      "HTML5"
+    ],
+    "domain": "Mobile engineering / Household planning",
+    "summary": "Native Android shopping and household planning development, with selected budgeting code and a browser-based interface preview.",
+    "problem": "Make shopping and household budgeting easier to organise, with native mobile development and a clear user experience.",
+    "architecture": [
+      "Household planning interface",
+      "Native Kotlin budgeting component",
+      "Budgeting experience"
+    ],
+    "engineering": [
+      "The public edition contains the native Kotlin BudgetTracker component and a separate browser-based interface preview.",
+      "The documented full-project stack includes Android and Jetpack Compose; the selected files do not establish that the complete native app is buildable from this repository.",
+      "Native budgeting logic and interface prototyping can be reviewed as separate engineering evidence rather than presenting a preview as the complete product."
+    ],
+    "evidence": [
+      [
+        "Native budget tracking component",
+        "app/src/main/java/za/co/khayacart/BudgetTracker.kt"
+      ],
+      [
+        "Public edition scope and full-project stack",
+        "README.md"
+      ]
+    ],
+    "boundary": "Selected public code, not the complete APK or current Android release. No signing material, private backend or full application is supplied by the public edition."
+  },
+  {
+    "slug": "gandalf-mobile",
+    "project": "Gandalf Mobile",
+    "title": "Gandalf Mobile",
+    "repo": "Gandalf-Mobile-Public",
+    "sha": "29f2e17c267b26fd248259609bbbf0a0624aad10",
+    "color": "#16834B",
+    "stack": [
+      "Kotlin",
+      "Android",
+      "Node.js",
+      "JavaScript"
+    ],
+    "domain": "Mobile AI / Assistant orchestration",
+    "summary": "A native mobile-assistant engineering programme, represented publicly by Kotlin session and reminder components.",
+    "problem": "Support coherent assistant interactions and useful task or reminder behavior on a mobile device.",
+    "architecture": [
+      "Assistant session",
+      "Reminder engine",
+      "Selected session test"
+    ],
+    "engineering": [
+      "The public source contains a GandalfAgentSession component and GandalfReminderEngine component.",
+      "A session test file accompanies the selected Kotlin code, making the public edition useful for examining testable component boundaries.",
+      "The full-project stack also documents Node.js and JavaScript; the public edition excludes private bridge and deployment services."
+    ],
+    "evidence": [
+      [
+        "Assistant session",
+        "app/src/main/java/group/ctdigital/gandalf/mobile/GandalfAgentSession.kt"
+      ],
+      [
+        "Reminder engine",
+        "app/src/main/java/group/ctdigital/gandalf/mobile/GandalfReminderEngine.kt"
+      ],
+      [
+        "Session test source",
+        "app/src/test/java/group/ctdigital/gandalf/mobile/GandalfAgentSessionTest.kt"
+      ]
+    ],
+    "boundary": "Selected Android components, not a standalone build. The existence of a test file is not a claim that tests passed for the current full application or that all device actions are supported."
+  },
+  {
+    "slug": "axiom-architect",
+    "project": "Axiom Architect",
+    "title": "Axiom Architect",
+    "repo": "Axiom-Architect",
+    "sha": "5e45ad70b52bc523497af5e7db5bef16c876f8c7",
+    "color": "#4285F4",
+    "stack": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS"
+    ],
+    "domain": "Application architecture / Workflow diagnostics",
+    "summary": "An AI-supported workflow architecture project for turning fragmented business processes into structured diagnostics and implementation blueprints.",
+    "problem": "Make handoffs, duplicated effort and automation opportunities visible before committing to a technology solution.",
+    "architecture": [
+      "Structured workflow intake",
+      "Diagnostic and review",
+      "Implementation blueprint"
+    ],
+    "engineering": [
+      "The documented intended workflow begins with intake and process review, then identifies automation opportunities and produces a structured blueprint.",
+      "The repository uses the Next.js App Router, React, TypeScript and Tailwind CSS; its source tree contains account, report and workflow-related application routes.",
+      "The documented development architecture names Vercel, Supabase, Stripe and Resend. Integration availability must be verified in each environment rather than inferred from source."
+    ],
+    "evidence": [
+      [
+        "Architecture and workflow direction",
+        "README.md"
+      ],
+      [
+        "Application dependencies",
+        "package.json"
+      ],
+      [
+        "Public about page source",
+        "app/about/page.tsx"
+      ]
+    ],
+    "boundary": "Public source and ongoing product direction. The documented workflow is not proof that each step is fully launched or automated.",
+    "live": "https://www.axiom-architect.co/"
+  },
+  {
+    "slug": "deepmind-resources",
+    "project": "DeepMind Resources",
+    "title": "DeepMind Resources",
+    "repo": "Deepmind-Resources",
+    "sha": "9461e438b150ead38d8ff77ede91bf5270f3c541",
+    "color": "#168B68",
+    "stack": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Supabase"
+    ],
+    "domain": "AI education / Learning platforms",
+    "summary": "A practical AI learning and resources platform that connects structured lessons, hands-on exercises and learner feedback.",
+    "problem": "Translate rapidly changing AI developments into understandable learning materials and practice rather than passive news consumption.",
+    "architecture": [
+      "Academy lessons",
+      "Practice sandbox",
+      "Learning feedback"
+    ],
+    "engineering": [
+      "The source tree includes structured Academy routes for paths, modules and lessons, along with a separate practice sandbox.",
+      "An Academy AI-feedback route and learner-facing application areas provide evidence of the learning-platform engineering direction.",
+      "The README documents Next.js App Router, reusable React components, TypeScript, Tailwind CSS, Supabase integration and server-side API routes."
+    ],
+    "evidence": [
+      [
+        "Learning platform architecture",
+        "README.md"
+      ],
+      [
+        "Academy entry",
+        "app/academy/page.tsx"
+      ],
+      [
+        "Sandbox entry",
+        "app/sandbox/page.tsx"
+      ],
+      [
+        "Feedback route source",
+        "app/api/academy/ai-feedback/route.ts"
+      ]
+    ],
+    "boundary": "Public source under active development. Source presence does not prove a feature is shipped or establish measured learner outcomes. No affiliation with Google DeepMind is claimed.",
+    "live": "https://v0-ai-learning-platform-nine-henna.vercel.app"
+  },
+  {
+    "slug": "trailtrade",
+    "project": "TrailTrade",
+    "title": "TrailTrade",
+    "repo": "TrailTrade-Public",
+    "sha": "837d2f67d565ff9b4100ae87a38dae01c0c275a0",
+    "color": "#B49B00",
+    "stack": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Supabase",
+      "Stripe"
+    ],
+    "domain": "Commerce engineering / Marketplace UX",
+    "summary": "A marketplace and live-show engineering programme represented by a curated React and TypeScript interface component collection.",
+    "problem": "Make marketplace discovery, listings and scheduled live-commerce experiences understandable through reusable user-interface components.",
+    "architecture": [
+      "Category and filter controls",
+      "Listing and seller cards",
+      "Show and countdown components"
+    ],
+    "engineering": [
+      "The reviewed public tree contains category, filtering, listing, seller and show cards plus scheduled-drop countdown components.",
+      "Reusable interface primitives such as buttons, cards, inputs and empty states demonstrate the component-based direction.",
+      "The full-project stack documents Next.js, Supabase and Stripe; the public edition focuses on selected front-end components, not the private commercial implementation."
+    ],
+    "evidence": [
+      [
+        "Marketplace category grid",
+        "components/marketplace/category-grid.tsx"
+      ],
+      [
+        "Listing card",
+        "components/marketplace/listing-card.tsx"
+      ],
+      [
+        "Show card",
+        "components/marketplace/show-card.tsx"
+      ],
+      [
+        "Scheduled drop countdown",
+        "components/shows/ScheduledDropCountdown.tsx"
+      ]
+    ],
+    "boundary": "Curated selected-source edition; some components are development placeholders. This is not a complete deployable marketplace, and no production transaction, livestream or performance claims are made.",
+    "live": "https://trailtrade-live.vercel.app"
+  }
+]
