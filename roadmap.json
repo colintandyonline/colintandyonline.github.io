@@ -3,7 +3,7 @@
     "source":  {
                    "projectNumber":  11,
                    "url":  "https://github.com/users/colintandyonline/projects/11",
-                   "generatedAt":  "2026-11-25T19:56:34Z",
+                   "generatedAt":  "2026-11-25T20:04:57Z",
                    "access":  "Reviewed public-field allowlist"
                },
     "items":  [
@@ -180,12 +180,12 @@
                       "id":  "PVTI_lAHODTdk384BtOlVzhL5S-I",
                       "title":  "Public development roadmap and history upgrade",
                       "project":  "Engineering Portfolio",
-                      "stage":  "In progress",
+                      "stage":  "Completed",
                       "lifecycle":  "Engineering",
                       "earliestRecordedDevelopment":  null,
                       "milestoneStart":  "2026-11-25",
                       "targetDate":  null,
-                      "completedDate":  null,
+                      "completedDate":  "2026-11-25",
                       "evidenceLabel":  "Public board and static projection implementation; completion requires live verification.",
                       "publicUrl":  "https://colintandyonline.github.io/#roadmap"
                   },

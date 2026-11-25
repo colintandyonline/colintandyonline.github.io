@@ -1,16 +1,59 @@
 param([switch]$PrivateReview)
 $ErrorActionPreference='Stop'
 $owner='colintandyonline';$number=11
-function GithubJSON([string[]]$argsList){
- $r=& gh.exe @argsList 2>&1
- if($LASTEXITCODE -ne 0){throw "GitHub request failed: $($argsList[0])"}
- return (($r -join [Environment]::NewLine)|ConvertFrom-Json)
+# Fetch only this public roadmap and its selected field values. This avoids the broad,
+# high-cost GitHub CLI project item-list query and does not access private boards.
+$query=@'
+query($pid:ID!){
+ node(id:$pid){
+  ... on ProjectV2{
+   id title number public url
+   items(first:100){
+    pageInfo{hasNextPage}
+    nodes{
+     id
+     content{... on DraftIssue{title}}
+     fieldValues(first:20){
+      nodes{
+       ... on ProjectV2ItemFieldSingleSelectValue{name field{... on ProjectV2SingleSelectField{name}}}
+       ... on ProjectV2ItemFieldDateValue{date field{... on ProjectV2Field{name}}}
+       ... on ProjectV2ItemFieldTextValue{text field{... on ProjectV2Field{name}}}
+      }
+     }
+    }
+   }
+  }
+ }
 }
-$board=GithubJSON @('project','view',"$number",'--owner',$owner,'--format','json')
+'@
+$request=@{query=$query;variables=@{pid='PVT_kwHODTdk384BtOlV'}}|ConvertTo-Json -Depth 8 -Compress
+$raw=$request | & gh.exe api graphql --input - 2>&1
+if($LASTEXITCODE -ne 0){throw 'Public roadmap GraphQL read failed'}
+$response=($raw -join '')|ConvertFrom-Json
+if($response.errors){throw 'Public roadmap GraphQL returned errors'}
+$board=$response.data.node
 $canonical="https://github.com/users/$owner/projects/$number"
-if($board.title -ne 'CTDG Public Development Roadmap' -or $board.url -ne $canonical){throw 'Unexpected source project'}
+if($board.title -ne 'CTDG Public Development Roadmap' -or $board.number -ne $number -or $board.url -ne $canonical){throw 'Unexpected source project'}
 if(-not $board.public -and -not $PrivateReview){throw 'Source roadmap is not public'}
-$data=GithubJSON @('project','item-list',"$number",'--owner',$owner,'--format','json','--limit','100')
+if($board.items.pageInfo.hasNextPage){throw 'Roadmap item page truncated; review required'}
+$selected=[System.Collections.Generic.List[object]]::new()
+foreach($entry in $board.items.nodes){
+ if(-not $entry.content.title){throw 'Public board has an unexpected item type'}
+ $projection=[pscustomobject]@{id=$entry.id;title=$entry.content.title;content=[pscustomobject]@{type='DraftIssue'}}
+ foreach($fieldValue in $entry.fieldValues.nodes){
+  $fieldName=[string]$fieldValue.field.name
+  if([string]::IsNullOrWhiteSpace($fieldName)){continue}
+  $value=$null
+  if($null -ne $fieldValue.PSObject.Properties['date']){$value=$fieldValue.date}
+  elseif($null -ne $fieldValue.PSObject.Properties['text']){$value=$fieldValue.text}
+  elseif($null -ne $fieldValue.PSObject.Properties['name']){$value=$fieldValue.name}
+  if($fieldName -in @('Project','Stage','Lifecycle','Earliest recorded development','Milestone start','Target date','Completed date','Evidence label','Public URL')){
+   $projection|Add-Member -NotePropertyName $fieldName -NotePropertyValue $value
+  }
+ }
+ $selected.Add($projection)
+}
+$data=[pscustomobject]@{items=@($selected)}
 $categories=@('CTDG Website','Interactive Demos','KayaCart','Gandalf Mobile','Axiom Architect','DeepMind Resources','TrailTrade','Command Centre','Managed AI','AI Research','Engineering Portfolio')
 $stages=@('Planned','In progress','Completed')
 $lifecycles=@('Live','Active development','Research','Engineering')
