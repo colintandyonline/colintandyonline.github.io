@@ -7,7 +7,6 @@ export default {
       "Referrer-Policy": "strict-origin-when-cross-origin",
       "X-Frame-Options": "DENY",
       "X-CTDG-Source-Commit": env.SOURCE_COMMIT,
-      "X-Robots-Tag": "noindex",
       "Cache-Control": "no-cache"
     };
     const reply = (body, status, extra = {}) =>

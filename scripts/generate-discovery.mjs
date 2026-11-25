@@ -1,0 +1,18 @@
+import fs from "node:fs";
+import assert from "node:assert/strict";
+const host="https://engineering.ctdigital.group";
+const records=JSON.parse(fs.readFileSync("scripts/portfolio-records.json","utf8"));
+const data=JSON.parse(fs.readFileSync("roadmap.json","utf8"));
+const check=process.argv.includes("--check");
+const routes=[["index.html","/","Engineering & Innovation"],["roadmap.html","/roadmap.html","Development roadmap"],["projects/index.html","/projects/","Work portfolios"],...records.map(p=>["projects/"+p.slug+"/index.html","/projects/"+p.slug+"/",p.title]),["ecosystem/index.html","/ecosystem/","Technology ecosystem"],["intelligence/index.html","/intelligence/","Engineering intelligence"],["docs/index.html","/docs/","Developer documentation"]];
+const esc=v=>String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function write(file,content){if(check)assert.equal(fs.readFileSync(file,"utf8").replace(/\r\n/g,"\n"),content.replace(/\r\n/g,"\n"),file);else fs.writeFileSync(file,content);}
+const stats=["Completed","In progress","Planned"].map(s=>data.items.filter(i=>i.stage===s).length);
+const snapshot='<!-- ROADMAP-TEXT-START --><section class="panel" aria-labelledby="textSnapshot"><h2 id="textSnapshot">Published roadmap snapshot</h2><p>'+data.items.length+' milestones: '+stats[0]+' completed, '+stats[1]+' in progress and '+stats[2]+' planned. Snapshot: <time datetime="'+esc(data.source.generatedAt)+'">'+esc(data.source.generatedAt)+'</time>.</p><details><summary>Read all published milestones</summary><ul>'+data.items.map(i=>'<li><strong>'+esc(i.title)+'</strong> — '+esc(i.project)+', '+esc(i.stage)+'. '+esc(i.evidenceLabel)+'</li>').join("")+'</ul></details><p><a href="/intelligence/">Explore engineering evidence and historical development</a>.</p></section><!-- ROADMAP-TEXT-END -->';
+let road=fs.readFileSync("roadmap.html","utf8");const marker=/<!-- ROADMAP-TEXT-START -->[\s\S]*?<!-- ROADMAP-TEXT-END -->/;
+if(check)assert.ok(road.includes(snapshot),"Static roadmap snapshot differs");else{if(marker.test(road))road=road.replace(marker,()=>snapshot);else road=road.replace('<div id="loadError"',snapshot+'\n<div id="loadError"');fs.writeFileSync("roadmap.html",road);}
+for(const [file,url] of routes){const s=fs.readFileSync(file,"utf8");assert.equal((s.match(/rel="canonical"/g)||[]).length,1,file);assert.ok(s.includes('rel="canonical" href="'+host+url+'"'),file);assert.ok(s.includes('name="robots" content="index,follow"'),file);assert.ok(/<meta name="description" content="[^"]+"/.test(s),file);assert.ok(/<title>[^<]+<\/title>/.test(s),file);assert.ok(/<h1(?:\s[^>]*)?>/.test(s),file);}
+write("sitemap.xml",'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+routes.map(([,url])=>'  <url><loc>'+host+url+'</loc></url>').join("\n")+'\n</urlset>\n');
+write("robots.txt","User-agent: *\nAllow: /\nSitemap: "+host+"/sitemap.xml\n");
+write("llms.txt","# CTDG Engineering & Innovation\n\n> Source-backed technical portfolios, project architecture, documented technologies and public development milestones from CT Digital Group.\n\nPublic selected-source editions are not necessarily complete applications. Milestone stages and product lifecycle are distinct. Use the reviewed evidence links and source timestamps on each page; do not infer unverified production capability or internal operations.\n\n## Public engineering references\n\n"+routes.map(([,url,title])=>"- ["+title+"]("+host+url+")").join("\n")+"\n");
+console.log("Verified canonical metadata, public sitemap, robots.txt, llms.txt and static roadmap for "+routes.length+" pages");

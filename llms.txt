@@ -1,0 +1,21 @@
+# CTDG Engineering & Innovation
+
+> Source-backed technical portfolios, project architecture, documented technologies and public development milestones from CT Digital Group.
+
+Public selected-source editions are not necessarily complete applications. Milestone stages and product lifecycle are distinct. Use the reviewed evidence links and source timestamps on each page; do not infer unverified production capability or internal operations.
+
+## Public engineering references
+
+- [Engineering & Innovation](https://engineering.ctdigital.group/)
+- [Development roadmap](https://engineering.ctdigital.group/roadmap.html)
+- [Work portfolios](https://engineering.ctdigital.group/projects/)
+- [CTDG Website & Cora](https://engineering.ctdigital.group/projects/ctdg-website/)
+- [Interactive Demos](https://engineering.ctdigital.group/projects/interactive-demos/)
+- [KayaCart](https://engineering.ctdigital.group/projects/kayacart/)
+- [Gandalf Mobile](https://engineering.ctdigital.group/projects/gandalf-mobile/)
+- [Axiom Architect](https://engineering.ctdigital.group/projects/axiom-architect/)
+- [DeepMind Resources](https://engineering.ctdigital.group/projects/deepmind-resources/)
+- [TrailTrade](https://engineering.ctdigital.group/projects/trailtrade/)
+- [Technology ecosystem](https://engineering.ctdigital.group/ecosystem/)
+- [Engineering intelligence](https://engineering.ctdigital.group/intelligence/)
+- [Developer documentation](https://engineering.ctdigital.group/docs/)

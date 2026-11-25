@@ -9,8 +9,8 @@ const host = "engineering.ctdigital.group";
 const name = "ctdg-engineering-innovation";
 const repo = "https://github.com/colintandyonline/colintandyonline.github.io";
 const workerPath = "worker/engineering.mjs";
-const paths = ["index.html", "roadmap.html", "roadmap.js", "roadmap.json", "showcase.css", "showcase.js", "assets/ctdg-logo.png", "assets/icons.svg", "portfolio.css", "portfolio.js", "projects/index.html", "projects/ctdg-website/index.html", "projects/interactive-demos/index.html", "projects/kayacart/index.html", "projects/gandalf-mobile/index.html", "projects/axiom-architect/index.html", "projects/deepmind-resources/index.html", "projects/trailtrade/index.html", "ecosystem/index.html", "intelligence/index.html", "ecosystem.css", "ecosystem.js", "docs/index.html", "docs.css", "docs.js"];
-const types = {".html":"text/html; charset=utf-8", ".js":"text/javascript; charset=utf-8", ".json":"application/json; charset=utf-8", ".css":"text/css; charset=utf-8", ".png":"image/png", ".svg":"image/svg+xml"};
+const paths = ["index.html", "roadmap.html", "roadmap.js", "roadmap.json", "showcase.css", "showcase.js", "assets/ctdg-logo.png", "assets/icons.svg", "portfolio.css", "portfolio.js", "projects/index.html", "projects/ctdg-website/index.html", "projects/interactive-demos/index.html", "projects/kayacart/index.html", "projects/gandalf-mobile/index.html", "projects/axiom-architect/index.html", "projects/deepmind-resources/index.html", "projects/trailtrade/index.html", "ecosystem/index.html", "intelligence/index.html", "ecosystem.css", "ecosystem.js", "docs/index.html", "docs.css", "docs.js", "robots.txt", "sitemap.xml", "llms.txt"];
+const types = {".html":"text/html; charset=utf-8", ".js":"text/javascript; charset=utf-8", ".json":"application/json; charset=utf-8", ".css":"text/css; charset=utf-8", ".png":"image/png", ".svg":"image/svg+xml", ".xml":"application/xml; charset=utf-8", ".txt":"text/plain; charset=utf-8"};
 const git = (...args) => execFileSync("git", args, {cwd:root, maxBuffer:16*1024*1024});
 const commit = git("rev-parse", "HEAD").toString().trim();
 assert.match(commit, /^[a-f0-9]{40}$/);
@@ -57,7 +57,7 @@ async function validateWorker(){
     const response = await req(path);
     assert.equal(response.status,200,path);
     assert.equal(response.headers.get("X-CTDG-Source-Commit"),commit);
-    assert.equal(response.headers.get("X-Robots-Tag"),"noindex");
+    assert.equal(response.headers.get("X-Robots-Tag"),null);
     assert.deepEqual(Buffer.from(await response.arrayBuffer()),files.get(path.endsWith("/")?path+"index.html":path));
   }
   const head = await req("/","HEAD");
@@ -121,7 +121,7 @@ async function smoke(){
     const response=await fetch("https://"+host+requestPath+"?release="+commit,{redirect:"error",signal:AbortSignal.timeout(20000),cache:"no-store"});
     assert.equal(response.status,200,requestPath);
     assert.equal(response.headers.get("X-CTDG-Source-Commit"),commit,requestPath+" source commit");
-    assert.equal(response.headers.get("X-Robots-Tag"),"noindex",requestPath+" indexing gate");
+    assert.equal(response.headers.get("X-Robots-Tag"),null,requestPath+" indexing header");
     assert.ok(response.headers.get("content-type")?.startsWith(types[extname(path)].split(";")[0]),path+" MIME type");
     const actual=Buffer.from(await response.arrayBuffer());
     if (!actual.equals(bytes)) {
@@ -141,7 +141,7 @@ async function smoke(){
   assert.equal(head.headers.get("X-CTDG-Source-Commit"),commit);
   const post=await fetch("https://"+host+"/",{method:"POST",signal:AbortSignal.timeout(10000)});
   assert.equal(post.status,405);
-  console.log("Live checks passed: "+files.size+" exact-source assets, indexing gate, HEAD and blocked private paths.");
+  console.log("Live checks passed: "+files.size+" exact-source assets, indexing header, HEAD and blocked private paths.");
 }
 async function deploy(){
   assert.equal(git("status","--porcelain","--untracked-files=normal").toString().trim(),"","Dirty checkout");
@@ -181,7 +181,7 @@ async function deploy(){
   }
 }
 try {
-  validateSource();execFileSync(process.execPath, ["scripts/generate-portfolios.mjs","--check"], {cwd:root,stdio:"inherit"});execFileSync(process.execPath, ["scripts/generate-ecosystem.mjs","--check"], {cwd:root,stdio:"inherit"});execFileSync(process.execPath, ["scripts/generate-docs.mjs","--check"], {cwd:root,stdio:"inherit"});await validateWorker();
+  validateSource();execFileSync(process.execPath, ["scripts/generate-portfolios.mjs","--check"], {cwd:root,stdio:"inherit"});execFileSync(process.execPath, ["scripts/generate-ecosystem.mjs","--check"], {cwd:root,stdio:"inherit"});execFileSync(process.execPath, ["scripts/generate-docs.mjs","--check"], {cwd:root,stdio:"inherit"});execFileSync(process.execPath, ["scripts/generate-discovery.mjs","--check"], {cwd:root,stdio:"inherit"});await validateWorker();
   const action=process.argv[2]||"check";
   if(action==="deploy")await deploy();
   else if(action==="smoke")await smoke();
