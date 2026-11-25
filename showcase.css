@@ -130,3 +130,16 @@ main section{margin:38px 0}.grid,.project-grid{gap:14px}
 .analytics-choice[hidden]{display:none!important}
 .analytics-choice{position:fixed;z-index:100;bottom:18px;left:50%;transform:translateX(-50%);width:min(760px,calc(100% - 32px));box-sizing:border-box;display:flex;align-items:center;gap:20px;padding:20px;background:#0b2033;border:1px solid #49768e;border-radius:15px;box-shadow:0 12px 45px #0009;color:#e9f6ff;text-align:left}
 .analytics-choice p{margin:6px 0;font-size:.85rem;line-height:1.5}.analytics-actions{display:flex;gap:8px;flex-wrap:wrap;flex-shrink:0}.analytics-actions button,#analytics-settings{font:inherit;color:#d8effa;cursor:pointer;background:#102c40;border:1px solid #4a758c;border-radius:8px;padding:10px 12px}.analytics-actions button:hover,#analytics-settings:hover{background:#1a4359}.analytics-actions button:focus-visible,#analytics-settings:focus-visible{outline:2px solid #62e5ff;outline-offset:3px}#analytics-settings{padding:4px 8px;font-size:inherit}@media(max-width:650px){.analytics-choice{flex-direction:column;align-items:stretch;gap:8px;padding:15px}.analytics-actions{display:grid;grid-template-columns:1fr 1fr}.analytics-actions button{padding:10px 6px}}
+
+/* CTDG Engineering observatory field. Decorative artwork, not live telemetry. */
+body{isolation:isolate;background:radial-gradient(ellipse at 82% 8%,#123c55 0,transparent 43%),radial-gradient(ellipse at 10% 78%,#132a4b 0,transparent 48%),#060e1b;background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;background:url("/assets/engineering-field.svg") center/cover no-repeat;mask-image:none;opacity:.85;transform-origin:65% 50%}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 86% 30%,#20b6dc22,transparent 46%),radial-gradient(ellipse at 12% 80%,#21569c26,transparent 54%);opacity:.7}
+@keyframes ctdg-field-drift{from{transform:scale(1.02);opacity:.72}to{transform:scale(1.08);opacity:.94}}
+@keyframes ctdg-light-drift{from{opacity:.4}to{opacity:.85}}
+@media(prefers-reduced-motion:no-preference){html[data-engineering-motion="on"] body::before{animation:ctdg-field-drift 36s ease-in-out infinite alternate}html[data-engineering-motion="on"] body::after{animation:ctdg-light-drift 18s ease-in-out infinite alternate}.button,.action,nav a{transition:background .18s,border-color .18s,box-shadow .18s}.button:hover,.action:hover,nav a:hover{box-shadow:0 0 18px #62e5ff18}}
+#engineering-motion-toggle{font:inherit;color:#d8effa;cursor:pointer;background:#102c40;border:1px solid #4a758c;border-radius:8px;padding:4px 8px}
+#engineering-motion-toggle:hover{background:#1a4359}
+#engineering-motion-toggle:focus-visible{outline:2px solid #62e5ff;outline-offset:3px}
+@media(max-width:650px){body::before{background-position:63% center;opacity:.56}body::after{opacity:.42}}
+@media(prefers-reduced-motion:reduce){body::before,body::after{animation:none!important;transform:none!important}}

@@ -9,7 +9,7 @@ const host = "engineering.ctdigital.group";
 const name = "ctdg-engineering-innovation";
 const repo = "https://github.com/colintandyonline/colintandyonline.github.io";
 const workerPath = "worker/engineering.mjs";
-const paths = ["index.html", "roadmap.html", "roadmap.js", "roadmap.json", "showcase.css", "showcase.js", "assets/ctdg-logo.png", "assets/icons.svg", "portfolio.css", "portfolio.js", "projects/index.html", "projects/ctdg-website/index.html", "projects/interactive-demos/index.html", "projects/kayacart/index.html", "projects/gandalf-mobile/index.html", "projects/axiom-architect/index.html", "projects/deepmind-resources/index.html", "projects/trailtrade/index.html", "ecosystem/index.html", "intelligence/index.html", "ecosystem.css", "ecosystem.js", "docs/index.html", "docs.css", "docs.js", "robots.txt", "sitemap.xml", "llms.txt", "services/index.html", "services.css", "services.js", "assets/social-share.jpg", "contact/index.html", "analytics-consent.js", "lab/index.html", "cora/index.html", "cora-guide.css", "cora-guide.js"];
+const paths = ["index.html", "roadmap.html", "roadmap.js", "roadmap.json", "showcase.css", "showcase.js", "assets/ctdg-logo.png", "assets/icons.svg", "portfolio.css", "portfolio.js", "projects/index.html", "projects/ctdg-website/index.html", "projects/interactive-demos/index.html", "projects/kayacart/index.html", "projects/gandalf-mobile/index.html", "projects/axiom-architect/index.html", "projects/deepmind-resources/index.html", "projects/trailtrade/index.html", "ecosystem/index.html", "intelligence/index.html", "ecosystem.css", "ecosystem.js", "docs/index.html", "docs.css", "docs.js", "robots.txt", "sitemap.xml", "llms.txt", "services/index.html", "services.css", "services.js", "assets/social-share.jpg", "contact/index.html", "analytics-consent.js", "lab/index.html", "cora/index.html", "cora-guide.css", "cora-guide.js", "assets/engineering-field.svg", "engineering-motion.js"];
 const types = {".html":"text/html; charset=utf-8", ".js":"text/javascript; charset=utf-8", ".json":"application/json; charset=utf-8", ".css":"text/css; charset=utf-8", ".png":"image/png", ".jpg":"image/jpeg", ".svg":"image/svg+xml", ".xml":"application/xml; charset=utf-8", ".txt":"text/plain; charset=utf-8"};
 const git = (...args) => execFileSync("git", args, {cwd:root, maxBuffer:16*1024*1024});
 const commit = git("rev-parse", "HEAD").toString().trim();
@@ -42,7 +42,7 @@ function validateSource(){
   assert.equal(data.schemaVersion,1);
   assert.equal(data.source.projectNumber,11);
   assert.ok(data.items.length > 0 && data.items.every(item => typeof item.title === "string" && ["Completed","In progress","Planned"].includes(item.stage)));
-  for (const path of ["/roadmap.js","/showcase.js","/portfolio.js","/ecosystem.js","/docs.js","/services.js","/analytics-consent.js","/cora-guide.js"]) new Function(files.get(path).toString("utf8"));
+  for (const path of ["/roadmap.js","/showcase.js","/portfolio.js","/ecosystem.js","/docs.js","/services.js","/analytics-consent.js","/cora-guide.js","/engineering-motion.js"]) new Function(files.get(path).toString("utf8"));
   assert.equal(files.get("/assets/ctdg-logo.png").subarray(0,8).toString("hex"),"89504e470d0a1a0a");
 }
 
