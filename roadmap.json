@@ -174,7 +174,7 @@
                       "targetDate":  null,
                       "completedDate":  "2026-11-25",
                       "evidenceLabel":  "Technology badge rollout and Engineering Showcase publicly verified by 2026-11-25.",
-                      "publicUrl":  "https://colintandyonline.github.io/"
+                      "publicUrl":  "https://engineering.ctdigital.group/"
                   },
                   {
                       "id":  "PVTI_lAHODTdk384BtOlVzhL5S-I",
@@ -187,7 +187,7 @@
                       "targetDate":  null,
                       "completedDate":  "2026-11-25",
                       "evidenceLabel":  "Public board and static projection implementation; completion requires live verification.",
-                      "publicUrl":  "https://colintandyonline.github.io/#roadmap"
+                      "publicUrl":  "https://engineering.ctdigital.group/roadmap.html"
                   },
                   {
                       "id":  "PVTI_lAHODTdk384BtOlVzhL5TAg",
@@ -200,7 +200,7 @@
                       "targetDate":  null,
                       "completedDate":  null,
                       "evidenceLabel":  "Proposal only; scope and timing not committed.",
-                      "publicUrl":  "https://colintandyonline.github.io/"
+                      "publicUrl":  "https://engineering.ctdigital.group/"
                   },
                   {
                       "id":  "PVTI_lAHODTdk384BtOlVzhL5TCc",
@@ -213,7 +213,7 @@
                       "targetDate":  null,
                       "completedDate":  null,
                       "evidenceLabel":  "Future improvement, no delivery date committed.",
-                      "publicUrl":  "https://colintandyonline.github.io/"
+                      "publicUrl":  "https://engineering.ctdigital.group/"
                   }
               ]
 }

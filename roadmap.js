@@ -35,7 +35,7 @@
       return [
         "ctdigital.group", "www.axiom-architect.co", "axiom-studio.co",
         "v0-ai-learning-platform-nine-henna.vercel.app",
-        "trailtrade-live.vercel.app", "colintandyonline.github.io"
+        "trailtrade-live.vercel.app", "engineering.ctdigital.group"
       ].indexOf(u.hostname) >= 0;
     } catch (_) { return false; }
   }

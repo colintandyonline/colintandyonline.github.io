@@ -57,7 +57,7 @@ $data=[pscustomobject]@{items=@($selected)}
 $categories=@('CTDG Website','Interactive Demos','KayaCart','Gandalf Mobile','Axiom Architect','DeepMind Resources','TrailTrade','Command Centre','Managed AI','AI Research','Engineering Portfolio')
 $stages=@('Planned','In progress','Completed')
 $lifecycles=@('Live','Active development','Research','Engineering')
-$hosts=@('ctdigital.group','www.axiom-architect.co','axiom-studio.co','v0-ai-learning-platform-nine-henna.vercel.app','trailtrade-live.vercel.app','colintandyonline.github.io')
+$hosts=@('ctdigital.group','www.axiom-architect.co','axiom-studio.co','v0-ai-learning-platform-nine-henna.vercel.app','trailtrade-live.vercel.app','engineering.ctdigital.group')
 function Prop($obj,[string]$key){$p=$obj.PSObject.Properties[$key];if($null -eq $p){return $null};return $p.Value}
 function SafeUrl([string]$value){
  $u=$null
@@ -76,7 +76,7 @@ $ids=[System.Collections.Generic.HashSet[string]]::new()
 foreach($i in $data.items){
  if($i.content.type -ne 'DraftIssue'){throw 'Non-approved public item type'}
  $category=[string](Prop $i 'project');$stage=[string](Prop $i 'stage');$lifecycle=[string](Prop $i 'lifecycle')
- $url=[string](Prop $i 'public URL');$evidence=[string](Prop $i 'evidence label')
+ $url=[string](Prop $i 'public URL');if($url -eq 'https://colintandyonline.github.io/#roadmap'){$url='https://engineering.ctdigital.group/roadmap.html'}elseif($url -eq 'https://colintandyonline.github.io/'){$url='https://engineering.ctdigital.group/'};$evidence=[string](Prop $i 'evidence label')
  if($category -notin $categories -or $stage -notin $stages -or $lifecycle -notin $lifecycles){throw 'Unexpected public selection'}
  if(-not (SafeUrl $url)){throw 'Unexpected public URL'}
  if(-not $i.title -or -not $evidence -or $i.title.Length -gt 150 -or $evidence.Length -gt 320){throw 'Unexpected public title/evidence'}
