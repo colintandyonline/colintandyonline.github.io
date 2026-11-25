@@ -1,3 +1,4 @@
+import {applyChrome} from "./site-chrome.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import {fileURLToPath} from "node:url";
@@ -17,6 +18,7 @@ function page(title,description,url,body,extra=""){
 }
 const check=process.argv.includes("--check");
 function write(file,content){
+ content=applyChrome(content);
  const full=path.join(root,file);
  if(check){if(fs.readFileSync(full,"utf8").replace(/\r\n/g,"\n")!==content.replace(/\r\n/g,"\n"))throw Error("Generated file differs: "+file);}
  else {fs.mkdirSync(path.dirname(full),{recursive:true});fs.writeFileSync(full,content,"utf8");}
