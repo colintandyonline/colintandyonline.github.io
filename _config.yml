@@ -1,0 +1,6 @@
+exclude:
+  - scripts
+  - worker
+  - .github
+  - README.md
+  - DEPLOYMENT.md
