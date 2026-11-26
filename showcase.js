@@ -24,3 +24,15 @@ if(signals)fetch("roadmap.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Erro
  rows.forEach(([value,label])=>{const box=document.createElement("div"),strong=document.createElement("strong"),span=document.createElement("span");strong.textContent=value;span.textContent=label;box.append(strong,span);signals.append(box);});signals.hidden=false;
 }).catch(()=>{});
 })();
+(function(){
+"use strict";
+const video=document.getElementById("engineering-intro-film"),button=document.getElementById("engineering-film-play"),status=document.getElementById("engineering-film-status");
+if(!video||!button||!status)return;
+function showPlay(){button.hidden=false;}
+function hidePlay(){button.hidden=true;status.hidden=true;}
+function failed(error){if(error?.name==="NotAllowedError"){showPlay();return;}if(error?.name==="AbortError")return;status.textContent="The introduction could not start. Please try the play control.";status.hidden=false;showPlay();}
+video.addEventListener("playing",hidePlay);
+video.addEventListener("error",()=>{status.textContent="The introduction is temporarily unavailable. Please try again.";status.hidden=false;showPlay();});
+button.addEventListener("click",()=>{video.play().catch(failed);});
+video.play().catch(failed);
+})();
