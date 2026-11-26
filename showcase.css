@@ -222,3 +222,21 @@ header .intelligence-menu{position:absolute;top:100%;left:0;z-index:35;width:252
 header .intelligence-menu a{display:flex;white-space:normal}
 header .intelligence-nav summary:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
 @media(max-width:650px){header .intelligence-nav summary{padding:7px 9px;gap:5px;font-size:.8rem}header .intelligence-menu{position:static;width:min(252px,100%);max-width:100%;box-shadow:none;margin-top:5px}header .intelligence-nav[open]{flex-basis:100%}}
+
+/* CTDG editorial and history enhancement. Existing brand and layout remain the baseline. */
+.ctdg-history{position:relative;overflow:hidden}
+.history-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;position:relative;margin:22px 0}
+.history-stop{min-width:0;position:relative;padding:19px;border:1px solid #345b73;border-top:2px solid var(--history-accent,var(--cyan));border-radius:12px;background:radial-gradient(ellipse at 90% 0%,#16465c55,transparent 65%),linear-gradient(145deg,#102a40,#0b2033)}
+.history-stop:nth-child(1){--history-accent:#4285F4}.history-stop:nth-child(2){--history-accent:#F38020}.history-stop:nth-child(3){--history-accent:#50d6ec}
+.history-date{display:flex;align-items:center;gap:7px;color:#c4e7f4;font-size:.8rem;font-weight:650}.history-date .ctdg-icon{color:var(--history-accent);flex:none}.history-stop h3{margin:10px 0;font-size:1.12rem}.history-stop p{font-size:.84rem;color:var(--muted);line-height:1.5}.history-value{display:flex;align-items:center;gap:10px;margin-top:14px}.history-value strong{font-size:1.8rem;color:var(--history-accent);line-height:1}.history-value span{font-size:.76rem;color:var(--muted)}.history-meter{height:6px;overflow:hidden;border-radius:8px;background:#1b3b51;margin:12px 0}.history-meter span{display:block;height:100%;background:var(--history-accent);border-radius:8px;position:relative;overflow:hidden}.history-stop small{color:var(--muted);font-size:.73rem}
+.history-stop:not(:last-child)::after{content:"";position:absolute;right:-17px;top:37px;width:16px;height:1px;background:#50d6ec88;pointer-events:none}
+.wf-origin-history{display:grid;gap:6px;margin:10px 0}.wf-origin-history>div{display:grid;grid-template-columns:88px minmax(0,1fr);gap:9px;padding:8px 10px;border-left:2px solid var(--wf-accent,var(--cyan));border-radius:4px;background:#102a40;font-size:.78rem}.wf-origin-history time{font-size:.73rem;color:var(--muted)}.wf-archive-review{padding:10px 12px;border:1px solid #345b73;border-radius:8px;background:#0c2336}
+main :is(.work-card,.doc-entry,.service-card,.release-entry,.guide-project-card,.film-route,.wf-team):hover{border-color:var(--ctdg-accent,var(--wf-accent,var(--project,#50d6ec)));box-shadow:0 0 20px color-mix(in srgb,var(--ctdg-accent,var(--wf-accent,var(--project,#50d6ec))) 11%,transparent)}
+main :is(.service-symbol,.guide-project-symbol,.film-route-icon,.release-symbol,.wf-agent-icon){transition:box-shadow .2s ease,border-color .2s ease}
+main :is(.service-card,.guide-project-card,.film-route,.release-entry,.wf-agent):hover :is(.service-symbol,.guide-project-symbol,.film-route-icon,.release-symbol,.wf-agent-icon){box-shadow:0 0 15px #50d6ec2b}
+main :is(.work-card,.doc-entry,.service-card,.release-entry,.guide-project-card,.film-route):focus-within{border-color:var(--cyan)}
+@keyframes ctdg-history-signal{from{transform:translateX(-100%)}to{transform:translateX(320%)}}
+@media(prefers-reduced-motion:no-preference){html[data-engineering-motion="on"] .history-meter span::after{content:"";position:absolute;inset:0 auto 0 0;width:40%;background:linear-gradient(90deg,transparent,#eafaff88,transparent);animation:ctdg-history-signal 5.5s linear infinite}html[data-engineering-motion="on"] .history-stop:nth-child(2) .history-meter span::after{animation-delay:-1.8s}html[data-engineering-motion="on"] .history-stop:nth-child(3) .history-meter span::after{animation-delay:-3.5s}}
+@media(max-width:850px){.history-track{grid-template-columns:1fr}.history-stop:not(:last-child)::after{right:auto;left:26px;top:auto;bottom:-17px;width:1px;height:16px}}
+@media(max-width:380px){.wf-origin-history>div{grid-template-columns:1fr;gap:4px}}
+@media(prefers-reduced-motion:reduce){main :is(.service-symbol,.guide-project-symbol,.film-route-icon,.release-symbol,.wf-agent-icon){transition:none}}

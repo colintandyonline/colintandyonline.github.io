@@ -124,6 +124,47 @@
                 "event": "Historical return-to-service approval"
               }
             ]
+          },
+          "archive": {
+            "first": "2026-09-29",
+            "events": [
+              {
+                "date": "2026-09-29",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-09-29",
+                "label": "Execution validation recorded",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 1,
+                "met": 1,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -194,6 +235,47 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-09-29",
+            "events": [
+              {
+                "date": "2026-09-29",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-09-29",
+                "label": "Execution validation recorded",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 1,
+                "met": 1,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -258,6 +340,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -296,6 +412,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -439,6 +589,54 @@
                 "event": "Retest incomplete"
               }
             ]
+          },
+          "archive": {
+            "first": "2026-09-29",
+            "events": [
+              {
+                "date": "2026-09-29",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-09-29",
+                "label": "Execution validation recorded",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 2,
+                "met": 2,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Self-development assessment",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -586,6 +784,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Independent task assessment",
+                "count": 2,
+                "met": 1,
+                "below": 1
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": "6 October: an early assessment could not independently verify all reported values because the recorded evidence lacked output payloads. A subsequent review found more accurately reported directory facts but still identified unsupported assessment claims."
           }
         },
         {
@@ -670,6 +902,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -748,6 +1014,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -899,6 +1199,47 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-09-29",
+            "events": [
+              {
+                "date": "2026-09-29",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-09-29",
+                "label": "Execution validation recorded",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 2,
+                "met": 1,
+                "below": 1
+              }
+            ],
+            "review": "7 October: an engineering inspection identified supported findings but the submission was incomplete. The evaluation required a complete ranked finding set and consistent coverage."
           }
         },
         {
@@ -964,6 +1305,47 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 2,
+                "met": 1,
+                "below": 1
+              },
+              {
+                "date": "2026-10-08",
+                "label": "Independent task assessment",
+                "count": 1,
+                "met": 0,
+                "below": 1
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -1050,6 +1432,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 1,
+                "met": 1,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -1129,6 +1545,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -1193,6 +1643,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -1298,6 +1782,54 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-09-29",
+            "events": [
+              {
+                "date": "2026-09-29",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-09-29",
+                "label": "Execution validation recorded",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 3,
+                "met": 3,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Self-development assessment",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -1358,6 +1890,54 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Independent task assessment",
+                "count": 2,
+                "met": 1,
+                "below": 1
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 2,
+                "met": 1,
+                "below": 1
+              },
+              {
+                "date": "2026-10-08",
+                "label": "Independent task assessment",
+                "count": 1,
+                "met": 1,
+                "below": 0
+              }
+            ],
+            "review": "6 October: the first bounded audit missed part of the requested scope. A subsequent read-only audit met its task threshold but still had limitations in direct source coverage."
           }
         },
         {
@@ -1430,6 +2010,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -1494,6 +2108,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -1540,6 +2188,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 3,
+                "met": 2,
+                "below": 1
+              }
+            ],
+            "review": "7 October: a reliability inspection identified credible issues and verification ideas but did not complete the requested analysis. It fell below the required standard. This was an earlier operational assessment, not a completed training-labelled exercise."
           }
         },
         {
@@ -1625,6 +2307,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -1703,6 +2419,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -1767,6 +2517,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -1841,6 +2625,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 3,
+                "met": 3,
+                "below": 0
+              }
+            ],
+            "review": "7 October: a bounded integration inspection met its task threshold with ranked, actionable findings. The evaluator qualified confidence where full source evidence was unavailable."
           }
         },
         {
@@ -1906,6 +2724,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -1952,6 +2804,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -2016,6 +2902,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -2088,6 +3008,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -2153,6 +3107,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -2197,6 +3185,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -2262,6 +3284,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -2352,6 +3408,54 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-09-29",
+            "events": [
+              {
+                "date": "2026-09-29",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-09-29",
+                "label": "Execution validation recorded",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 2,
+                "met": 2,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Self-development assessment",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -2512,6 +3616,54 @@
                 "event": "Historical return-to-service approval"
               }
             ]
+          },
+          "archive": {
+            "first": "2026-09-29",
+            "events": [
+              {
+                "date": "2026-09-29",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-09-29",
+                "label": "Execution validation recorded",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 3,
+                "met": 2,
+                "below": 1
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Self-development assessment",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -2576,6 +3728,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -2640,6 +3826,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -2778,6 +3998,54 @@
                 "event": "Historical return-to-service approval"
               }
             ]
+          },
+          "archive": {
+            "first": "2026-09-29",
+            "events": [
+              {
+                "date": "2026-09-29",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-09-29",
+                "label": "Execution validation recorded",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 3,
+                "met": 2,
+                "below": 1
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Self-development assessment",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -2817,6 +4085,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -2881,6 +4183,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -3019,6 +4355,54 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-09-29",
+            "events": [
+              {
+                "date": "2026-09-29",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-09-29",
+                "label": "Execution validation recorded",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 4,
+                "met": 4,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Self-development assessment",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -3085,6 +4469,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -3149,6 +4567,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -3239,6 +4691,54 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-09-29",
+            "events": [
+              {
+                "date": "2026-09-29",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-09-29",
+                "label": "Execution validation recorded",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Independent task assessment",
+                "count": 3,
+                "met": 3,
+                "below": 0
+              },
+              {
+                "date": "2026-10-07",
+                "label": "Self-development assessment",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -3354,6 +4854,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -3398,6 +4932,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -3463,6 +5031,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -3554,6 +5156,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -3619,6 +5255,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -3756,6 +5426,40 @@
                 "event": "Historical return-to-service approval"
               }
             ]
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -3814,6 +5518,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         },
         {
@@ -3896,6 +5634,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -4021,6 +5793,54 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Activation validation passed",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Independent task assessment",
+                "count": 1,
+                "met": 1,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": "6 October: a bounded workforce validation met its task threshold and respected the no-write boundary. The evaluator identified an unsupported claim about running work."
           }
         },
         {
@@ -4086,6 +5906,40 @@
               }
             ],
             "retests": []
+          },
+          "archive": {
+            "first": "2026-10-06",
+            "events": [
+              {
+                "date": "2026-10-06",
+                "label": "Accountability record opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Specialist provisioned",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Training profile established",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              },
+              {
+                "date": "2026-10-06",
+                "label": "Individual development plan opened",
+                "count": 1,
+                "met": 0,
+                "below": 0
+              }
+            ],
+            "review": null
           }
         }
       ]
@@ -4144,5 +5998,37 @@
       "policy": "Independent evaluation uses task instructions, output, tool evidence and approval evidence. No retrospective scoring and no self-certification.",
       "benchmarkSource": "CTDG owned-site training benchmark case definitions; these are designed tests, not claims that every case ran."
     }
+  },
+  "archive": {
+    "earliest": "2026-09-29",
+    "events": 1570,
+    "months": [
+      {
+        "month": "2026-09",
+        "events": 20,
+        "agents": 10,
+        "baselines": 10,
+        "plans": 0,
+        "evaluations": 0
+      },
+      {
+        "month": "2026-10",
+        "events": 364,
+        "agents": 50,
+        "baselines": 40,
+        "plans": 50,
+        "evaluations": 42
+      },
+      {
+        "month": "2026-11",
+        "events": 1186,
+        "agents": 50,
+        "baselines": 0,
+        "plans": 0,
+        "evaluations": 200
+      }
+    ],
+    "earlyEvaluations": 42,
+    "earlyAgents": 17
   }
 }
