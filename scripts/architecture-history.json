@@ -1,0 +1,166 @@
+{
+  "ctdg-website": {
+    "components": [
+      [
+        "Start with the visitor's requirement. The README describes reception and enquiry guidance, not a confirmed conversation outcome.",
+        1
+      ],
+      [
+        "The Worker is the reviewed edge-hosted website entry point. Inspect its source rather than assuming every integration is present today.",
+        0
+      ],
+      [
+        "Voice and chat are documented alongside corporate content. The verification workflow is a source check, not a measured conversation-quality benchmark.",
+        2
+      ]
+    ],
+    "checkpoints": [],
+    "reviewedDate": "2026-11-25"
+  },
+  "interactive-demos": {
+    "components": [
+      [
+        "The historical selected edition exposes a browser entry to service journeys, distinct from the current live platform.",
+        0
+      ],
+      [
+        "The standalone receptionist page illustrates the interface, not a verified backend or customer handoff.",
+        1
+      ],
+      [
+        "The guided tour shows an interactive presentation. Compare it with the live experience rather than treating a preview as deployment.",
+        2
+      ]
+    ],
+    "checkpoints": [],
+    "reviewedDate": "2026-11-25"
+  },
+  "kayacart": {
+    "components": [
+      [
+        "The README describes the household planning and native Android direction; the browser preview is a separate interface representation.",
+        1
+      ],
+      [
+        "The Kotlin BudgetTracker is concrete budgeting code to inspect, not the entire native application.",
+        0
+      ],
+      [
+        "The README documents the full-project stack separately from the selected source. It establishes the public reproduction boundaries.",
+        1
+      ]
+    ],
+    "checkpoints": [],
+    "reviewedDate": "2026-11-25"
+  },
+  "gandalf-mobile": {
+    "components": [
+      [
+        "The Kotlin session component is a useful boundary for reviewing selected assistant interaction code.",
+        0
+      ],
+      [
+        "The reminder engine is separately inspectable. It does not establish unrestricted device control, live bridge services or successful reminder delivery.",
+        1
+      ],
+      [
+        "The session test provides an example of a testable interface. Its presence is not proof of a passing current application build.",
+        2
+      ]
+    ],
+    "checkpoints": [],
+    "reviewedDate": "2026-11-25"
+  },
+  "axiom-architect": {
+    "components": [
+      [
+        "The documented workflow starts with structured business information and its constraints.",
+        0
+      ],
+      [
+        "The repository describes review and diagnostics; dependencies establish the documented stack. Integration health is not inferred.",
+        1
+      ],
+      [
+        "The blueprint is the intended outcome of process review. The about page describes the direction, not proof of full deployment.",
+        2
+      ]
+    ],
+    "checkpoints": [
+      [
+        "2026-06-01",
+        "Proposal payment synchronisation documentation",
+        "c16410bb6fc7f83bebfeb87effd0787e62aee704",
+        "Recorded work on payment sync: the records and resulting state have to agree."
+      ],
+      [
+        "2026-06-05",
+        "Proposal payment flow verification and hardening",
+        "4e67f4c10d8ae506ab7692601644b0b43fc08f6e",
+        "A historical verification and hardening pass, not confirmation of current live payment processing."
+      ],
+      [
+        "2026-06-06",
+        "Stripe live-mode audit",
+        "3c68c97c6a60eaa31207fa12646ef04a1461b4fc",
+        "The commit records an audit addition; no successful transactions are inferred."
+      ]
+    ],
+    "reviewedDate": "2026-11-25"
+  },
+  "deepmind-resources": {
+    "components": [
+      [
+        "The Academy entry provides evidence of a structured learning journey.",
+        1
+      ],
+      [
+        "The separate sandbox documents hands-on practice; it does not imply every lesson is complete.",
+        2
+      ],
+      [
+        "The server-side feedback route is an inspectable evaluation interface, not a measurement of learning outcomes.",
+        3
+      ]
+    ],
+    "checkpoints": [
+      [
+        "2026-05-06",
+        "Academy practice improvement cycle",
+        "2b02daba584bbfa79a0c52ef4eb4cc7238a35d2a",
+        "Recorded work on making learning an activity rather than passive reading."
+      ],
+      [
+        "2026-05-06",
+        "Lesson progress persistence",
+        "ae7d3a50fa5df574d3c95ad0e0969f62c4babdda",
+        "Recorded work on retaining progress rather than forcing a learner to repeat work after a lost state change."
+      ],
+      [
+        "2026-05-07",
+        "AI Fundamentals lesson completion stabilisation",
+        "a36d060920ff17b1514f21730f6ab8d73cba8de7",
+        "Follow-up completion work shows iteration, not measured learning gains."
+      ]
+    ],
+    "reviewedDate": "2026-11-25"
+  },
+  "trailtrade": {
+    "components": [
+      [
+        "The reviewed category grid illustrates narrowing marketplace discovery.",
+        0
+      ],
+      [
+        "The listing card is inspectable front-end code, not evidence of seller verification or payment completion.",
+        1
+      ],
+      [
+        "Show cards illustrate scheduled commerce presentation, not confirmed live-stream or transaction infrastructure.",
+        2
+      ]
+    ],
+    "checkpoints": [],
+    "reviewedDate": "2026-11-25"
+  }
+}

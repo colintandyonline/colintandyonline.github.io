@@ -1,0 +1,58 @@
+[
+  [
+    "shield-check",
+    "How do you evaluate AI agents?",
+    "training evaluation benchmark score guardrails readiness",
+    "Our training record distinguishes exercises meeting the task standard, below-standard assessments and incomplete executions. Internal thresholds are risk-based; controlled governance retests require independent evidence. Completing an exercise is not automatic certification.",
+    "/workforce/#training-benchmarks",
+    "Inspect training benchmarks"
+  ],
+  [
+    "calendar-range",
+    "When did the engineering work begin?",
+    "history dates earlier March April May September October",
+    "The reviewed portfolio dates reach March 2026; the surviving workforce ledger begins on 29 September. Project dates represent recorded source evidence, not launch dates.",
+    "/intelligence/#development-journey",
+    "Follow our development history"
+  ],
+  [
+    "flask-conical",
+    "Can I test the engineering principles myself?",
+    "experiment practice lab exercises evidence retry",
+    "The Workbench uses fictional records to investigate evidence, workflow recovery, retesting and multi-specialist handoffs. Its scoring is deterministic and local, not a live model evaluation.",
+    "/lab/#experiments",
+    "Open the Workbench"
+  ],
+  [
+    "code-xml",
+    "Can I see how the applications fit together?",
+    "architecture API stack components technology source code",
+    "Seven public portfolios contain selectable architecture components and linked source evidence. Selected public editions are not necessarily complete deployable applications.",
+    "/projects/",
+    "Explore case studies"
+  ],
+  [
+    "book-open",
+    "Where can I read about engineering decisions?",
+    "journal articles why lessons write blog",
+    "The Engineering Journal explains evidence checks, useful handoffs and learning systems, with links to public project and training records.",
+    "/journal/",
+    "Read the Engineering Journal"
+  ],
+  [
+    "mail",
+    "Can Cora assess my business or give me a price?",
+    "quote pricing contact scope business project",
+    "This guide is a curated local topic finder, not a live conversational model. For individual requirements, use the engineering contact centre. Scope, pricing and access are agreed after discovery.",
+    "/contact/",
+    "Discuss your requirements"
+  ],
+  [
+    "bot",
+    "How do I talk to the live receptionist?",
+    "voice speak live conversation cora",
+    "The corporate Cora demonstration is the separate conversational experience. This engineering page provides a scripted tour and curated knowledge finder.",
+    "https://ctdigital.group/interactive/ai-receptionist",
+    "Open the corporate receptionist"
+  ]
+]

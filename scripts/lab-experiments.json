@@ -169,5 +169,62 @@
         "why": "Passing a controlled test and obtaining authorisation are distinct. Neither should be inferred from a self-reported success."
       }
     ]
+  },
+  {
+    "key": "collaboration",
+    "icon": "network",
+    "title": "Three specialists, one accountable handoff",
+    "tag": "Agent collaboration",
+    "description": "A research specialist, an engineering specialist and a client-facing assistant need to work together. Decide what each may pass to the next without turning assumptions into commitments.",
+    "source": "Fictional exercise based on CTDG's documented role boundaries, evidence discipline and human-owned handoffs. It does not execute agents.",
+    "receipts": [
+      [
+        "C01",
+        "Research handoff",
+        "Two potential integration approaches identified; the customer's system version is unknown."
+      ],
+      [
+        "C02",
+        "Engineering review",
+        "A compatibility decision requires the system version and a bounded test. No test has run."
+      ],
+      [
+        "C03",
+        "Customer communication",
+        "A draft update is allowed; a quotation, delivery promise or external send requires authorisation."
+      ]
+    ],
+    "questions": [
+      {
+        "label": "What should the research specialist pass to engineering?",
+        "options": [
+          "A confirmed integration guarantee.",
+          "The two options, their evidence and the missing version.",
+          "A final quotation based on the more popular option."
+        ],
+        "answer": 1,
+        "why": "A useful handoff preserves the findings and uncertainty. C01 does not establish compatibility."
+      },
+      {
+        "label": "What should engineering ask for before recommending a solution?",
+        "options": [
+          "A confident prediction from another model.",
+          "Permission to alter the customer's live system immediately.",
+          "The system version and an appropriately bounded compatibility test."
+        ],
+        "answer": 2,
+        "why": "C02 identifies the missing evidence. A controlled test can establish feasibility without assuming permission to change production."
+      },
+      {
+        "label": "What can the client-facing assistant safely prepare?",
+        "options": [
+          "A draft explaining the options, missing information and next step for review.",
+          "A guarantee that the integration will be delivered next week.",
+          "An external message sent automatically to confirm the project."
+        ],
+        "answer": 0,
+        "why": "A draft preserves the distinction between discovery and commercial commitment. C03 requires authorisation for further action."
+      }
+    ]
   }
 ]

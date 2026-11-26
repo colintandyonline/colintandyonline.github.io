@@ -1,0 +1,119 @@
+[
+  {
+    "slug": "evidence-not-confidence",
+    "icon": "shield-check",
+    "tag": "AI assurance",
+    "title": "Confidence is not an acceptance test",
+    "summary": "Why a convincing AI answer still needs evidence, and what our workforce training teaches us about judging it.",
+    "sections": [
+      [
+        "The problem with a very convincing answer",
+        "An AI assistant can write a beautifully organised account of work it has not actually completed. That is particularly awkward when the next person treats the account as a confirmed business event. We want a report that can show which record supports the claim, not one that simply sounds as though it has inspected a record. This matters when somebody decides whether to contact a customer, approve a change or trust a result."
+      ],
+      [
+        "What we ask our specialists to demonstrate",
+        "Our published workforce record describes independent assessment across seven dimensions, with thresholds of 75, 80, 85 or 90 out of 100 depending on task priority. These are internal task standards, not universal AI benchmarks. In the dated training snapshot, 109 of 136 attempts met their task standard, six were below it and 21 did not complete execution. A failed connection tells us something about operational reliability, but it does not establish that the agent's reasoning was poor."
+      ],
+      [
+        "The awkward case is the useful case",
+        "Reviewed recovery records describe unsupported evidence claims and incomplete retests. Corrective work included tighter receipt checks and explicit handling of missing information. The important question is not whether an instruction was added, but whether an independently assessed retest exercises the original failure. If the result is missing, we should say so. A system that can admit what it cannot establish is far more useful than one that supplies a plausible explanation every time."
+      ],
+      [
+        "Try it yourself",
+        "Our browser-based Workbench gives visitors fictional records and a fixed answer key. It is not a live model test; it is a way to see why matching a claim to evidence matters before we let a workflow make a decision."
+      ]
+    ],
+    "links": [
+      [
+        "Workforce assessment framework",
+        "/workforce/#training-benchmarks"
+      ],
+      [
+        "Workforce development history",
+        "/workforce/#workforce-history"
+      ],
+      [
+        "Try the evidence exercise",
+        "/lab/#experiments"
+      ]
+    ]
+  },
+  {
+    "slug": "handoffs-not-more-tools",
+    "icon": "network",
+    "tag": "Workflow architecture",
+    "title": "The handoff is where a workflow earns its keep",
+    "summary": "A timeout, a duplicate record and an uncertain state are better architecture questions than a shiny integration diagram.",
+    "sections": [
+      [
+        "Start with the thing that must arrive",
+        "When a customer makes an enquiry, the objective is not to move a message between two applications. It is to get the correct information to the appropriate person, with an accurate understanding of what happened. An integration that moves incomplete information faster has not necessarily made the business better. Start with the outcome, the point at which it is confirmed and the person or system that owns the next decision."
+      ],
+      [
+        "What a timeout really means",
+        "Imagine a service accepts a request but the connection drops before the caller receives confirmation. We cannot infer that the request failed. The receiving system may have written the record. Retrying with a fresh identifier could create a duplicate. Where the integration supports it, a stable request key and a lookup against the authoritative record can make a retry safer. An identifier is not magical duplicate protection unless the receiving system actually honours it."
+      ],
+      [
+        "Separate an interface from a working system",
+        "A public demo can show a useful journey without proving that every production system is integrated. Our Interactive Demos portfolio makes this distinction explicit: selected public HTML provides interface evidence; the live experience is separate. Axiom Architect's documented workflow describes intake, diagnosis and an implementation blueprint rather than promising that every step is operational in every environment."
+      ],
+      [
+        "Make recovery visible",
+        "When retries cannot establish an outcome, stop and surface the uncertainty. Give the responsible person enough context to decide what happens next. Our Workbench includes a fictional enquiry with an ambiguous integration response. It illustrates a wider engineering principle: make failures legible instead of hiding them behind another green status icon."
+      ]
+    ],
+    "links": [
+      [
+        "Interactive Demos architecture",
+        "/projects/interactive-demos/"
+      ],
+      [
+        "Axiom Architect",
+        "/projects/axiom-architect/"
+      ],
+      [
+        "Workflow recovery exercise",
+        "/lab/#experiments"
+      ]
+    ]
+  },
+  {
+    "slug": "learning-that-leaves-evidence",
+    "icon": "book-open",
+    "tag": "Learning engineering",
+    "title": "A lesson should leave more than a completed checkbox",
+    "summary": "The difference between delivering information, recording practice and establishing what has actually been learned.",
+    "sections": [
+      [
+        "Learning is not the same as reading",
+        "A page full of explanations can be useful, but it does not tell us whether somebody can apply them. The next step is an exercise with a recognisable objective, a way to inspect the result and a chance to improve it. That connects our learner-facing work with our AI workforce development. Neither is well served by an attractive progress display that cannot explain what the progress represents."
+      ],
+      [
+        "A project with a real development history",
+        "DeepMind Resources has reviewed project-specific source evidence dating to 28 April 2026. Its public May history includes work on the Academy practice cycle, lesson progress persistence and lesson completion stabilisation. These are small but important engineering concerns. If a learning system loses progress or misrepresents completion, the learner spends effort working around the software instead of learning."
+      ],
+      [
+        "Why we separate the records",
+        "Our public portfolio shows Academy and sandbox routes and an AI-feedback route. This establishes selected implementation evidence, not that every lesson is shipped or that learners achieved a particular result. The same discipline applies to the workforce. September accountability records, October assessment events and November training attempts are different records; adding them together as though they were all completed lessons would make a very impressive and rather misleading number."
+      ],
+      [
+        "A useful next step",
+        "A learning journey should let somebody inspect an example, make a decision, understand the feedback and try again. Our Workbench follows that pattern using fictional exercises. Our public workforce profiles show development history, assessment outcomes and limitations separately. The objective is to let visitors see how we think about improvement, rather than merely telling them that improvement happens."
+      ]
+    ],
+    "links": [
+      [
+        "DeepMind Resources development history",
+        "/projects/deepmind-resources/#project-history"
+      ],
+      [
+        "Workforce learning history",
+        "/workforce/#workforce-history"
+      ],
+      [
+        "Engineering Workbench",
+        "/lab/#experiments"
+      ]
+    ]
+  }
+]
