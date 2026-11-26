@@ -1,0 +1,173 @@
+[
+  {
+    "key": "evidence",
+    "icon": "shield-check",
+    "title": "Can you trust that AI answer?",
+    "tag": "Evidence and provenance",
+    "description": "A plausible report is not necessarily a reliable report. Inspect the available records and decide which claims the evidence actually supports.",
+    "source": "Inspired by the documented receipt-matching and independent assessment controls used in our workforce training. All example records below are fictional.",
+    "receipts": [
+      [
+        "E01",
+        "Inspection result",
+        "The enquiry record exists. Status: awaiting review."
+      ],
+      [
+        "E02",
+        "Connector response",
+        "No delivery confirmation was returned."
+      ],
+      [
+        "E03",
+        "Scope",
+        "Read-only inspection; no external communication authorised."
+      ]
+    ],
+    "questions": [
+      {
+        "label": "Which conclusion is supported by E01 and E02?",
+        "options": [
+          "The customer has received a confirmation.",
+          "The enquiry exists; delivery is not verified.",
+          "The connector has definitely failed."
+        ],
+        "answer": 1,
+        "why": "E01 proves the record exists. E02 does not prove delivery or a definite failure. Report the missing evidence rather than filling the gap."
+      },
+      {
+        "label": "What should the assistant do with a request to send the confirmation?",
+        "options": [
+          "Send it to complete the demonstration.",
+          "Claim it has been sent and wait for a receipt.",
+          "Prepare a draft and request the appropriate authorisation."
+        ],
+        "answer": 2,
+        "why": "E03 restricts this exercise to read-only work. A draft is different from a consequential external action."
+      },
+      {
+        "label": "What would establish that delivery actually occurred?",
+        "options": [
+          "A matching delivery receipt from the authorised system.",
+          "A confident response from the assistant.",
+          "A new task labelled completed."
+        ],
+        "answer": 0,
+        "why": "The evidence must establish the claimed event, not merely show that an assistant wrote a response or a task changed status."
+      }
+    ]
+  },
+  {
+    "key": "workflow",
+    "icon": "network",
+    "title": "One enquiry, not three",
+    "tag": "Workflow reliability",
+    "description": "An integration returns an ambiguous result. Decide how to recover without quietly turning one customer request into several records.",
+    "source": "A constructed workflow exercise illustrating the duplicate protection, verification and handoff principles in CTDG's automation work.",
+    "receipts": [
+      [
+        "W01",
+        "Incoming event",
+        "Enquiry reference DEMO-104; request accepted for processing."
+      ],
+      [
+        "W02",
+        "Integration response",
+        "Connection timed out before a success response was received."
+      ],
+      [
+        "W03",
+        "Retry contract",
+        "The receiving service accepts a stable unique request key and supports lookup by that key."
+      ]
+    ],
+    "questions": [
+      {
+        "label": "What should happen before creating another enquiry?",
+        "options": [
+          "Look up DEMO-104 using the original request key.",
+          "Create another record with a fresh key.",
+          "Assume the first request failed and mark it deleted."
+        ],
+        "answer": 0,
+        "why": "A timeout is ambiguous. The receiving service may already have committed the first request."
+      },
+      {
+        "label": "The lookup finds no record. How should an authorised retry proceed?",
+        "options": [
+          "Retry forever until an answer arrives.",
+          "Reuse the same key with bounded retries.",
+          "Generate a different reference for every attempt."
+        ],
+        "answer": 1,
+        "why": "A stable key provides duplicate protection under the stated integration contract. Retry limits prevent an unresolved fault from becoming an endless process."
+      },
+      {
+        "label": "The retry limit is reached without confirmation. What should the system show?",
+        "options": [
+          "Completed, to keep the dashboard tidy.",
+          "A second automatic workflow to keep trying indefinitely.",
+          "An unresolved delivery state with a clear human handoff."
+        ],
+        "answer": 2,
+        "why": "A useful workflow makes exceptions visible. It does not conceal a missing confirmation or repeatedly perform uncertain actions."
+      }
+    ]
+  },
+  {
+    "key": "retest",
+    "icon": "activity",
+    "title": "Has the agent actually improved?",
+    "tag": "Independent assessment",
+    "description": "An AI specialist has missed an evidence requirement. Decide what recovery evidence would justify returning it to work.",
+    "source": "A fictional training scenario based on our documented independent evaluation, controlled retest and governance review process. It is not the record of any named agent.",
+    "receipts": [
+      [
+        "T01",
+        "Initial assessment",
+        "Below task standard: an asserted finding has no matching receipt."
+      ],
+      [
+        "T02",
+        "Correction",
+        "The test now requires exact claim-to-receipt matching and explicit unknowns."
+      ],
+      [
+        "T03",
+        "Retest state",
+        "A retest is scheduled; no independent result is recorded yet."
+      ]
+    ],
+    "questions": [
+      {
+        "label": "Does T02 establish that the agent has recovered?",
+        "options": [
+          "Yes, the correction was written.",
+          "No, the controlled retest still needs independent evidence.",
+          "Yes, if the agent says it understands."
+        ],
+        "answer": 1,
+        "why": "A changed instruction is corrective work, not proof of recovery. T03 explicitly says the retest result is not yet recorded."
+      },
+      {
+        "label": "What should the retest deliberately include?",
+        "options": [
+          "A case with missing evidence to check whether the agent marks it unknown.",
+          "Only cases where all records are complete.",
+          "A question asking the agent whether it is reliable."
+        ],
+        "answer": 0,
+        "why": "Testing the original failure mode gives a meaningful opportunity to verify that the correction works."
+      },
+      {
+        "label": "When can return to service be considered?",
+        "options": [
+          "As soon as the agent completes any task.",
+          "Immediately after it self-certifies.",
+          "After independent acceptance and the required governance decision."
+        ],
+        "answer": 2,
+        "why": "Passing a controlled test and obtaining authorisation are distinct. Neither should be inferred from a self-reported success."
+      }
+    ]
+  }
+]
