@@ -209,3 +209,16 @@ html[data-engineering-motion="on"] .ctdg-edge-signal{animation:ctdg-signal-trave
 @media(max-width:850px){.ctdg-scene-fill{display:none}.ctdg-scene-background{opacity:.27}}
 @media(max-width:650px){.ctdg-grid-fill{display:none!important}}
 @media(prefers-reduced-motion:reduce){.ctdg-scene-signal,.ctdg-scene-glow,.ctdg-edge-signal{animation:none!important}}
+
+/* Shared Intelligence disclosure. */
+header .intelligence-nav{position:relative;min-width:0;margin:0}
+header .intelligence-nav summary{list-style:none;display:flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid transparent;border-radius:9px;color:#b4cede;font-size:.89rem;font-weight:600;cursor:pointer}
+header .intelligence-nav summary::-webkit-details-marker{display:none}
+header .intelligence-nav summary .ctdg-icon{color:var(--cyan);width:1rem;height:1rem}
+header .intelligence-nav[open] summary,header .intelligence-nav summary:hover,header .intelligence-nav .nav-current{background:#14354b;border-color:#316079;color:#fff}
+.nav-caret{width:6px;height:6px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg);margin-left:3px}
+.intelligence-nav[open] .nav-caret{transform:rotate(225deg)}
+header .intelligence-menu{position:absolute;top:100%;left:0;z-index:35;width:252px;display:grid;gap:5px;padding:8px;background:#0b2033;border:1px solid #345b73;border-radius:10px;box-shadow:0 16px 38px #0008}
+header .intelligence-menu a{display:flex;white-space:normal}
+header .intelligence-nav summary:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+@media(max-width:650px){header .intelligence-nav summary{padding:7px 9px;gap:5px;font-size:.8rem}header .intelligence-menu{position:static;width:min(252px,100%);max-width:100%;box-shadow:none;margin-top:5px}header .intelligence-nav[open]{flex-basis:100%}}

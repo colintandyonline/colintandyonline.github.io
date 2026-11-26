@@ -8,19 +8,95 @@
       "members": [
         {
           "name": "Atlas",
-          "role": "Chief of Staff / Command Agent"
+          "role": "Chief of Staff / Command Agent",
+          "skills": [
+            "Delegation",
+            "Daily briefings",
+            "Approvals",
+            "Cross-business coordination"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Delegation"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Multi-service routing and escalation"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Delegation"
+            }
+          ]
         },
         {
           "name": "Orbit",
-          "role": "Projects, Delivery & Operations Intelligence"
+          "role": "Projects, Delivery & Operations Intelligence",
+          "skills": [
+            "Project tracking",
+            "Delivery status intelligence",
+            "Deadline & delay monitoring",
+            "Client-safe status briefing",
+            "Capacity & workload monitoring",
+            "Blocker & dependency tracking",
+            "Service quality review",
+            "Cross-agent operations handoff"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Project tracking"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Project tracking"
+            }
+          ]
         },
         {
           "name": "Maeve",
-          "role": "Service Delivery Manager"
+          "role": "Service Delivery Manager",
+          "skills": [
+            "Managed service delivery",
+            "Portfolio coordination",
+            "Client service reviews",
+            "Delivery risk"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Managed service delivery"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Managed service delivery"
+            }
+          ]
         },
         {
           "name": "Ellis",
-          "role": "SLA & Escalation Coordinator"
+          "role": "SLA & Escalation Coordinator",
+          "skills": [
+            "SLA monitoring",
+            "Escalation routing",
+            "Priority triage",
+            "Service breach evidence"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "SLA monitoring"
+            }
+          ]
         }
       ]
     },
@@ -30,19 +106,138 @@
       "members": [
         {
           "name": "Iris",
-          "role": "Communications & Email"
+          "role": "Communications & Email",
+          "skills": [
+            "Inbox triage",
+            "Email drafting",
+            "Replies",
+            "Follow-up"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Service-tailored client communications"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Inbox triage"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Inbox triage"
+            },
+            {
+              "month": "2026-11",
+              "type": "Self-development",
+              "topic": "Governance and safety"
+            },
+            {
+              "month": "2026-10",
+              "type": "Self-development",
+              "topic": "Role capability development"
+            }
+          ]
         },
         {
           "name": "Cora",
-          "role": "AI Receptionist / Front Office Lead"
+          "role": "AI Receptionist / Front Office Lead",
+          "skills": [
+            "AI reception",
+            "Enquiry qualification",
+            "Front-office routing",
+            "Client-safe handoff",
+            "Reception context",
+            "Escalation"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "AI reception"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "AI reception"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "AI reception"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "AI reception"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "AI reception"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "AI reception"
+            }
+          ]
         },
         {
           "name": "Nia",
-          "role": "Client Success Specialist"
+          "role": "Client Success Specialist",
+          "skills": [
+            "Client onboarding",
+            "Adoption guidance",
+            "Service check-ins",
+            "Client-safe reporting"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Client onboarding"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Client onboarding"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Client onboarding"
+            }
+          ]
         },
         {
           "name": "Theo",
-          "role": "Service Desk Specialist"
+          "role": "Service Desk Specialist",
+          "skills": [
+            "Support triage",
+            "Case routing",
+            "Incident intake",
+            "Knowledge-assisted support"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Support triage"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Support triage"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Support triage"
+            }
+          ]
         }
       ]
     },
@@ -52,23 +247,147 @@
       "members": [
         {
           "name": "Forge",
-          "role": "Engineering Lead & Systems Infrastructure"
+          "role": "Engineering Lead & Systems Infrastructure",
+          "skills": [
+            "Infrastructure",
+            "Website health",
+            "Backups",
+            "Technical diagnostics"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Feasibility and secure integration delivery"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Infrastructure"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Infrastructure"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Infrastructure"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Infrastructure"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Infrastructure"
+            }
+          ]
         },
         {
           "name": "Arden",
-          "role": "Platform Engineer"
+          "role": "Platform Engineer",
+          "skills": [
+            "Platform engineering",
+            "Docker & Compose",
+            "Runtime diagnostics",
+            "Server health",
+            "Backup & rollback"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Platform engineering"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Platform engineering"
+            }
+          ]
         },
         {
           "name": "Mira",
-          "role": "Application Engineer"
+          "role": "Application Engineer",
+          "skills": [
+            "Node.js",
+            "Electron",
+            "PWA",
+            "REST APIs",
+            "Application architecture",
+            "Agent runtime engineering"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Node.js"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Node.js"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Node.js"
+            }
+          ]
         },
         {
           "name": "Quinn",
-          "role": "Data & Backend Engineer"
+          "role": "Data & Backend Engineer",
+          "skills": [
+            "Backend engineering",
+            "Database design",
+            "APIs",
+            "Data migrations",
+            "Queue workers"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Backend engineering"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Backend engineering"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Backend engineering"
+            }
+          ]
         },
         {
           "name": "Rhea",
-          "role": "QA Automation Engineer"
+          "role": "QA Automation Engineer",
+          "skills": [
+            "Automated testing",
+            "Regression suites",
+            "UI/API checks",
+            "Acceptance evidence"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Automated testing"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Automated testing"
+            }
+          ]
         }
       ]
     },
@@ -78,19 +397,109 @@
       "members": [
         {
           "name": "Pixel",
-          "role": "Creative & Content"
+          "role": "Creative & Content",
+          "skills": [
+            "Copywriting",
+            "Creative briefs",
+            "Articles",
+            "Social variants",
+            "WordPress design & governance"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Copywriting"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Copywriting"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Copywriting"
+            },
+            {
+              "month": "2026-10",
+              "type": "Self-development",
+              "topic": "Role capability development"
+            }
+          ]
         },
         {
           "name": "Rowan",
-          "role": "WordPress Engineer"
+          "role": "WordPress Engineer",
+          "skills": [
+            "WordPress engineering",
+            "WP-CLI",
+            "REST APIs",
+            "Custom plugins",
+            "WooCommerce",
+            "Action Scheduler"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "WordPress engineering"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "WordPress engineering"
+            }
+          ]
         },
         {
           "name": "Lena",
-          "role": "UX & Accessibility Specialist"
+          "role": "UX & Accessibility Specialist",
+          "skills": [
+            "UX review",
+            "Accessibility",
+            "Information architecture",
+            "Interaction design"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "UX review"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "UX review"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "UX review"
+            }
+          ]
         },
         {
           "name": "Hugo",
-          "role": "Web Performance Specialist"
+          "role": "Web Performance Specialist",
+          "skills": [
+            "Core Web Vitals",
+            "Frontend performance",
+            "Caching analysis",
+            "Asset optimisation"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Core Web Vitals"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Core Web Vitals"
+            }
+          ]
         }
       ]
     },
@@ -100,19 +509,99 @@
       "members": [
         {
           "name": "Vale",
-          "role": "Release & Reliability Engineer"
+          "role": "Release & Reliability Engineer",
+          "skills": [
+            "Release engineering",
+            "QA gates",
+            "Regression testing",
+            "Rollback",
+            "Observability",
+            "Incident handoff"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Release engineering"
+            }
+          ]
         },
         {
           "name": "Bram",
-          "role": "Cloud & Hosting Engineer"
+          "role": "Cloud & Hosting Engineer",
+          "skills": [
+            "Hosting operations",
+            "Cloud infrastructure",
+            "Plesk",
+            "Containers",
+            "Server diagnostics"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Hosting operations"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Hosting operations"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Hosting operations"
+            }
+          ]
         },
         {
           "name": "Iona",
-          "role": "Backup & Recovery Specialist"
+          "role": "Backup & Recovery Specialist",
+          "skills": [
+            "Backup validation",
+            "Restore testing",
+            "Recovery plans",
+            "Retention evidence"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Backup validation"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Backup validation"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Backup validation"
+            }
+          ]
         },
         {
           "name": "Soren",
-          "role": "Observability & Incident Specialist"
+          "role": "Observability & Incident Specialist",
+          "skills": [
+            "Monitoring",
+            "Incident triage",
+            "Service health",
+            "Post-incident evidence"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Monitoring"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Monitoring"
+            }
+          ]
         }
       ]
     },
@@ -122,19 +611,90 @@
       "members": [
         {
           "name": "Keir",
-          "role": "Integration & Automation Engineer"
+          "role": "Integration & Automation Engineer",
+          "skills": [
+            "API integrations",
+            "Webhooks",
+            "Automation",
+            "Connector health",
+            "OAuth boundaries",
+            "Cross-system data flow"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "API integrations"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "API integrations"
+            }
+          ]
         },
         {
           "name": "Talia",
-          "role": "AI Systems Engineer"
+          "role": "AI Systems Engineer",
+          "skills": [
+            "OpenAI runtime",
+            "Agent orchestration",
+            "Model routing",
+            "AI telemetry",
+            "Prompt/system architecture"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "OpenAI runtime"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "OpenAI runtime"
+            }
+          ]
         },
         {
           "name": "Remy",
-          "role": "Workflow Automation Specialist"
+          "role": "Workflow Automation Specialist",
+          "skills": [
+            "Workflow automation",
+            "Queues",
+            "Schedulers",
+            "Business rules",
+            "Runbooks"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Workflow automation"
+            }
+          ]
         },
         {
           "name": "Veda",
-          "role": "Voice & Conversation Systems Specialist"
+          "role": "Voice & Conversation Systems Specialist",
+          "skills": [
+            "Voice systems",
+            "Conversation flows",
+            "Language/voice separation",
+            "Reception workflows"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Voice systems"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Voice systems"
+            }
+          ]
         }
       ]
     },
@@ -144,19 +704,89 @@
       "members": [
         {
           "name": "Mara",
-          "role": "Security & Governance Lead"
+          "role": "Security & Governance Lead",
+          "skills": [
+            "Security review",
+            "Governance controls",
+            "Tenant isolation",
+            "Auditability",
+            "Secrets policy"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Security review"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Security review"
+            }
+          ]
         },
         {
           "name": "Dax",
-          "role": "Identity & Access Specialist"
+          "role": "Identity & Access Specialist",
+          "skills": [
+            "RBAC",
+            "Identity lifecycle",
+            "OAuth scopes",
+            "Service accounts",
+            "Access reviews"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "RBAC"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "RBAC"
+            }
+          ]
         },
         {
           "name": "Elin",
-          "role": "Risk & Compliance Operations Specialist"
+          "role": "Risk & Compliance Operations Specialist",
+          "skills": [
+            "Control evidence",
+            "Risk register",
+            "Policy checks",
+            "Compliance operations"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Control evidence"
+            }
+          ]
         },
         {
           "name": "Haven",
-          "role": "Trust, Claims & Safety Assurance Specialist"
+          "role": "Trust, Claims & Safety Assurance Specialist",
+          "skills": [
+            "Claims evidence",
+            "Health-content safety",
+            "Physical-safety claims",
+            "AI claim review",
+            "Product trust"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Claims evidence"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Claims evidence"
+            }
+          ]
         }
       ]
     },
@@ -166,19 +796,116 @@
       "members": [
         {
           "name": "Sage",
-          "role": "Knowledge & Notebook"
+          "role": "Knowledge & Notebook",
+          "skills": [
+            "Knowledge retrieval",
+            "Classification",
+            "Notes",
+            "Context"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Knowledge retrieval"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Knowledge retrieval"
+            },
+            {
+              "month": "2026-10",
+              "type": "Self-development",
+              "topic": "Role capability development"
+            }
+          ]
         },
         {
           "name": "Scout",
-          "role": "Research & Intelligence"
+          "role": "Research & Intelligence",
+          "skills": [
+            "Research",
+            "Competitive intelligence",
+            "Opportunity discovery",
+            "Evidence"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Research"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Research"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Research"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Research"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Research"
+            },
+            {
+              "month": "2026-10",
+              "type": "Self-development",
+              "topic": "Role capability development"
+            }
+          ]
         },
         {
           "name": "Cass",
-          "role": "BI & Analytics Specialist"
+          "role": "BI & Analytics Specialist",
+          "skills": [
+            "Business intelligence",
+            "Dashboards",
+            "KPI design",
+            "Operational analytics"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Business intelligence"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Business intelligence"
+            }
+          ]
         },
         {
           "name": "Noor",
-          "role": "Data Quality & Attribution Specialist"
+          "role": "Data Quality & Attribution Specialist",
+          "skills": [
+            "Data quality",
+            "Attribution",
+            "Identity matching",
+            "Source reconciliation"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Data quality"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Data quality"
+            }
+          ]
         }
       ]
     },
@@ -188,15 +915,75 @@
       "members": [
         {
           "name": "Pulse",
-          "role": "Sales & Growth"
+          "role": "Sales & Growth",
+          "skills": [
+            "Pipeline",
+            "Lead follow-up",
+            "Growth opportunities",
+            "Outreach"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Pipeline"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Pipeline"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Pipeline"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Pipeline"
+            }
+          ]
         },
         {
           "name": "Cleo",
-          "role": "CRM Operations Specialist"
+          "role": "CRM Operations Specialist",
+          "skills": [
+            "CRM hygiene",
+            "Pipeline operations",
+            "Activities",
+            "Follow-up state",
+            "Source authority"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "CRM hygiene"
+            }
+          ]
         },
         {
           "name": "Harper",
-          "role": "Proposal & Commercial Enablement Specialist"
+          "role": "Proposal & Commercial Enablement Specialist",
+          "skills": [
+            "Proposal preparation",
+            "Scope packaging",
+            "Commercial evidence",
+            "Handoff preparation"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Proposal preparation"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Proposal preparation"
+            }
+          ]
         }
       ]
     },
@@ -206,15 +993,91 @@
       "members": [
         {
           "name": "Nova",
-          "role": "Marketing Strategist"
+          "role": "Marketing Strategist",
+          "skills": [
+            "Campaigns",
+            "Social strategy",
+            "Email marketing",
+            "Content planning"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Campaigns"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Campaigns"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Campaigns"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Campaigns"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Campaigns"
+            },
+            {
+              "month": "2026-10",
+              "type": "Self-development",
+              "topic": "Role capability development"
+            }
+          ]
         },
         {
           "name": "Asha",
-          "role": "Search / SEO / AEO Specialist"
+          "role": "Search / SEO / AEO Specialist",
+          "skills": [
+            "SEO",
+            "AEO",
+            "GEO",
+            "Schema",
+            "Local search",
+            "Search evidence"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "SEO"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "SEO"
+            }
+          ]
         },
         {
           "name": "Juno",
-          "role": "Lifecycle & Email Marketing Specialist"
+          "role": "Lifecycle & Email Marketing Specialist",
+          "skills": [
+            "Lifecycle campaigns",
+            "Email marketing",
+            "Segmentation",
+            "Nurture journeys"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Lifecycle campaigns"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Lifecycle campaigns"
+            }
+          ]
         }
       ]
     },
@@ -224,19 +1087,106 @@
       "members": [
         {
           "name": "Ledger",
-          "role": "Finance"
+          "role": "Finance",
+          "skills": [
+            "Profitability",
+            "Cost control",
+            "Revenue monitoring",
+            "Subscription review"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Per-service commercial governance"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Profitability"
+            },
+            {
+              "month": "2026-10",
+              "type": "Self-development",
+              "topic": "Role capability development"
+            }
+          ]
         },
         {
           "name": "Freya",
-          "role": "Billing & Subscription Operations Specialist"
+          "role": "Billing & Subscription Operations Specialist",
+          "skills": [
+            "Billing operations",
+            "Subscription state",
+            "Invoice exceptions",
+            "Revenue leakage"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Billing operations"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Billing operations"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Billing operations"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Billing operations"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Billing operations"
+            }
+          ]
         },
         {
           "name": "Omar",
-          "role": "Commercial Analyst"
+          "role": "Commercial Analyst",
+          "skills": [
+            "Margin analysis",
+            "Unit economics",
+            "Commercial modelling",
+            "Revenue analysis"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Margin analysis"
+            }
+          ]
         },
         {
           "name": "Priya",
-          "role": "Procurement & Vendor Cost Specialist"
+          "role": "Procurement & Vendor Cost Specialist",
+          "skills": [
+            "Vendor costs",
+            "Renewals",
+            "Procurement analysis",
+            "Subscription rationalisation"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Vendor costs"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Vendor costs"
+            }
+          ]
         }
       ]
     },
@@ -246,23 +1196,131 @@
       "members": [
         {
           "name": "Esme",
-          "role": "Commerce Operations Lead"
+          "role": "Commerce Operations Lead",
+          "skills": [
+            "Ecommerce operations",
+            "Orders",
+            "Catalogues",
+            "Fulfilment coordination",
+            "Returns workflow"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Ecommerce operations"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Ecommerce operations"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Ecommerce operations"
+            }
+          ]
         },
         {
           "name": "Liora",
-          "role": "Publishing & Digital Products Specialist"
+          "role": "Publishing & Digital Products Specialist",
+          "skills": [
+            "Digital publishing",
+            "Metadata",
+            "Digital delivery",
+            "Product files",
+            "Editorial workflow"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Digital publishing"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Digital publishing"
+            }
+          ]
         },
         {
           "name": "Beck",
-          "role": "Marketplace Operations Specialist"
+          "role": "Marketplace Operations Specialist",
+          "skills": [
+            "Marketplace operations",
+            "Seller workflows",
+            "Listing quality",
+            "Live-commerce operations"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Marketplace operations"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Marketplace operations"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Marketplace operations"
+            }
+          ]
         },
         {
           "name": "Mina",
-          "role": "Rights, Licensing & IP Operations Specialist"
+          "role": "Rights, Licensing & IP Operations Specialist",
+          "skills": [
+            "Rights tracking",
+            "Licensing operations",
+            "Trademark/design checks",
+            "Asset provenance"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Rights tracking"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Rights tracking"
+            }
+          ]
         },
         {
           "name": "Jasper",
-          "role": "Marketplace Trust & Disputes Specialist"
+          "role": "Marketplace Trust & Disputes Specialist",
+          "skills": [
+            "Seller verification",
+            "Fraud signals",
+            "Dispute evidence",
+            "Chargeback preparation",
+            "Condition accuracy"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Seller verification"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Seller verification"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Seller verification"
+            }
+          ]
         }
       ]
     },
@@ -272,11 +1330,62 @@
       "members": [
         {
           "name": "Ada",
-          "role": "People & Administration Lead"
+          "role": "People & Administration Lead",
+          "skills": [
+            "Workforce administration",
+            "Onboarding and role records",
+            "Policy administration",
+            "Performance record administration"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Consent, privacy and onboarding governance"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Workforce administration"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Workforce administration"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Workforce administration"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Workforce administration"
+            }
+          ]
         },
         {
           "name": "Tess",
-          "role": "Workforce Administration Specialist"
+          "role": "Workforce Administration Specialist",
+          "skills": [
+            "Workforce records",
+            "Role administration",
+            "Capacity records",
+            "Admin coordination"
+          ],
+          "history": [
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Workforce records"
+            },
+            {
+              "month": "2026-11",
+              "type": "Continuation training",
+              "topic": "Workforce records"
+            }
+          ]
         }
       ]
     }
@@ -286,5 +1395,39 @@
     "passed": 9,
     "failed": 0,
     "scope": "Synthetic workforce policy, roster reconciliation and development-plan regression tests; not individual agent certification."
+  },
+  "training": {
+    "snapshot": "2026-11-26",
+    "records": 136,
+    "evaluated": 115,
+    "participants": 50,
+    "evaluatedParticipants": 47,
+    "dimensions": [
+      "Quality / Accuracy",
+      "Task Completion",
+      "Instruction Following",
+      "Operating Discipline",
+      "Governance / Safety",
+      "Efficiency",
+      "Handoff / Escalation Quality"
+    ],
+    "reviewWindows": {
+      "evidenceBuilding": 14,
+      "watch": 14,
+      "coaching": 7,
+      "current": 30
+    },
+    "months": [
+      {
+        "month": "2026-10",
+        "records": 6,
+        "evaluated": 6
+      },
+      {
+        "month": "2026-11",
+        "records": 130,
+        "evaluated": 109
+      }
+    ]
   }
 }
