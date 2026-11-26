@@ -1,0 +1,290 @@
+{
+  "asOf": "2026-11-26",
+  "source": "CTDG Command Centre local registry, read-only public role projection",
+  "departments": [
+    {
+      "key": "team-1",
+      "name": "Command & Service Operations",
+      "members": [
+        {
+          "name": "Atlas",
+          "role": "Chief of Staff / Command Agent"
+        },
+        {
+          "name": "Orbit",
+          "role": "Projects, Delivery & Operations Intelligence"
+        },
+        {
+          "name": "Maeve",
+          "role": "Service Delivery Manager"
+        },
+        {
+          "name": "Ellis",
+          "role": "SLA & Escalation Coordinator"
+        }
+      ]
+    },
+    {
+      "key": "team-2",
+      "name": "Front Office & Client Experience",
+      "members": [
+        {
+          "name": "Iris",
+          "role": "Communications & Email"
+        },
+        {
+          "name": "Cora",
+          "role": "AI Receptionist / Front Office Lead"
+        },
+        {
+          "name": "Nia",
+          "role": "Client Success Specialist"
+        },
+        {
+          "name": "Theo",
+          "role": "Service Desk Specialist"
+        }
+      ]
+    },
+    {
+      "key": "team-3",
+      "name": "Engineering & Application Delivery",
+      "members": [
+        {
+          "name": "Forge",
+          "role": "Engineering Lead & Systems Infrastructure"
+        },
+        {
+          "name": "Arden",
+          "role": "Platform Engineer"
+        },
+        {
+          "name": "Mira",
+          "role": "Application Engineer"
+        },
+        {
+          "name": "Quinn",
+          "role": "Data & Backend Engineer"
+        },
+        {
+          "name": "Rhea",
+          "role": "QA Automation Engineer"
+        }
+      ]
+    },
+    {
+      "key": "team-4",
+      "name": "Web, CMS & Digital Experience",
+      "members": [
+        {
+          "name": "Pixel",
+          "role": "Creative & Content"
+        },
+        {
+          "name": "Rowan",
+          "role": "WordPress Engineer"
+        },
+        {
+          "name": "Lena",
+          "role": "UX & Accessibility Specialist"
+        },
+        {
+          "name": "Hugo",
+          "role": "Web Performance Specialist"
+        }
+      ]
+    },
+    {
+      "key": "team-5",
+      "name": "Infrastructure, Cloud & Reliability",
+      "members": [
+        {
+          "name": "Vale",
+          "role": "Release & Reliability Engineer"
+        },
+        {
+          "name": "Bram",
+          "role": "Cloud & Hosting Engineer"
+        },
+        {
+          "name": "Iona",
+          "role": "Backup & Recovery Specialist"
+        },
+        {
+          "name": "Soren",
+          "role": "Observability & Incident Specialist"
+        }
+      ]
+    },
+    {
+      "key": "team-6",
+      "name": "Integrations, Automation & AI Systems",
+      "members": [
+        {
+          "name": "Keir",
+          "role": "Integration & Automation Engineer"
+        },
+        {
+          "name": "Talia",
+          "role": "AI Systems Engineer"
+        },
+        {
+          "name": "Remy",
+          "role": "Workflow Automation Specialist"
+        },
+        {
+          "name": "Veda",
+          "role": "Voice & Conversation Systems Specialist"
+        }
+      ]
+    },
+    {
+      "key": "team-7",
+      "name": "Security, Risk & Governance",
+      "members": [
+        {
+          "name": "Mara",
+          "role": "Security & Governance Lead"
+        },
+        {
+          "name": "Dax",
+          "role": "Identity & Access Specialist"
+        },
+        {
+          "name": "Elin",
+          "role": "Risk & Compliance Operations Specialist"
+        },
+        {
+          "name": "Haven",
+          "role": "Trust, Claims & Safety Assurance Specialist"
+        }
+      ]
+    },
+    {
+      "key": "team-8",
+      "name": "Data, Analytics & Knowledge",
+      "members": [
+        {
+          "name": "Sage",
+          "role": "Knowledge & Notebook"
+        },
+        {
+          "name": "Scout",
+          "role": "Research & Intelligence"
+        },
+        {
+          "name": "Cass",
+          "role": "BI & Analytics Specialist"
+        },
+        {
+          "name": "Noor",
+          "role": "Data Quality & Attribution Specialist"
+        }
+      ]
+    },
+    {
+      "key": "team-9",
+      "name": "CRM, Sales & Revenue Operations",
+      "members": [
+        {
+          "name": "Pulse",
+          "role": "Sales & Growth"
+        },
+        {
+          "name": "Cleo",
+          "role": "CRM Operations Specialist"
+        },
+        {
+          "name": "Harper",
+          "role": "Proposal & Commercial Enablement Specialist"
+        }
+      ]
+    },
+    {
+      "key": "team-10",
+      "name": "Marketing, Search & Growth",
+      "members": [
+        {
+          "name": "Nova",
+          "role": "Marketing Strategist"
+        },
+        {
+          "name": "Asha",
+          "role": "Search / SEO / AEO Specialist"
+        },
+        {
+          "name": "Juno",
+          "role": "Lifecycle & Email Marketing Specialist"
+        }
+      ]
+    },
+    {
+      "key": "team-11",
+      "name": "Finance, Billing & Commercial Control",
+      "members": [
+        {
+          "name": "Ledger",
+          "role": "Finance"
+        },
+        {
+          "name": "Freya",
+          "role": "Billing & Subscription Operations Specialist"
+        },
+        {
+          "name": "Omar",
+          "role": "Commercial Analyst"
+        },
+        {
+          "name": "Priya",
+          "role": "Procurement & Vendor Cost Specialist"
+        }
+      ]
+    },
+    {
+      "key": "team-12",
+      "name": "Commerce, Publishing & Catalogue Operations",
+      "members": [
+        {
+          "name": "Esme",
+          "role": "Commerce Operations Lead"
+        },
+        {
+          "name": "Liora",
+          "role": "Publishing & Digital Products Specialist"
+        },
+        {
+          "name": "Beck",
+          "role": "Marketplace Operations Specialist"
+        },
+        {
+          "name": "Mina",
+          "role": "Rights, Licensing & IP Operations Specialist"
+        },
+        {
+          "name": "Jasper",
+          "role": "Marketplace Trust & Disputes Specialist"
+        }
+      ]
+    },
+    {
+      "key": "team-13",
+      "name": "People, Administration & Workforce Governance",
+      "members": [
+        {
+          "name": "Ada",
+          "role": "People & Administration Lead"
+        },
+        {
+          "name": "Tess",
+          "role": "Workforce Administration Specialist"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "date": "2026-11-26",
+    "passed": 9,
+    "failed": 0,
+    "scope": "Synthetic workforce policy, roster reconciliation and development-plan regression tests; not individual agent certification."
+  }
+}

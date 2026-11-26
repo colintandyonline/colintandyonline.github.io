@@ -18,7 +18,7 @@ const projects=[{"slug":"ctdg-website","title":"CTDG Website & Cora","project":"
 const bySlug=new Map(projects.map(p=>[p.slug,p]));
 const icons={"ctdg-website":"globe","interactive-demos":"activity","kayacart":"layers","gandalf-mobile":"bot","axiom-architect":"code-xml","deepmind-resources":"book-open","trailtrade":"network"};
 const categoryColors={"AI systems":"#7F52FF","Integration":"#168B68","Applications":"#4285F4","Assurance":"#16834B","Research":"#B49B00","Automation":"#16834B","Conversational AI":"#F38020","Voice technology":"#7F52FF"};
-const variants=route==="/ecosystem/"?"orbit":route==="/intelligence/"||route==="/roadmap.html"?"telemetry":route==="/docs/"?"precision":route==="/services/"||route==="/contact/"?"circuit":route==="/cora/"?"halo":route==="/lab/"?"orbit":route.startsWith("/projects")?"network":"observatory";
+const variants=route==="/ecosystem/"?"orbit":route==="/intelligence/"||route==="/roadmap.html"?"telemetry":route==="/docs/"?"precision":route==="/services/"||route==="/contact/"?"circuit":route==="/cora/"?"halo":(route==="/lab/"||route==="/workforce/")?"orbit":route.startsWith("/projects")?"network":"observatory";
 root.dataset.engineeringScene=variants;
 const NS="http://www.w3.org/2000/svg";
 function element(tag,attrs={}){const e=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));return e;}
