@@ -1,0 +1,66 @@
+[
+  {
+    "sha": "07cb7b02ff206b6a27701c94dff6d398345d2fa0",
+    "date": "2026-11-26",
+    "title": "Observatory motion system",
+    "summary": "Page-specific animated signal pathways, project accents and consistent iconography.",
+    "url": "/ecosystem/",
+    "icon": "network"
+  },
+  {
+    "sha": "472d4c7e080e4c8494021448e1e4ba32d5ed38e7",
+    "date": "2026-11-26",
+    "title": "Cora Engineering introduction",
+    "summary": "Native cinematic hero with integrated controls and engineering navigation.",
+    "url": "/",
+    "icon": "bot"
+  },
+  {
+    "sha": "29d8d2001c492d2480004aa1f3f48a55a2b77c8b",
+    "date": "2026-11-25",
+    "title": "Cora guided experience",
+    "summary": "Customer-focused guided journeys and practical frequently asked questions.",
+    "url": "/cora/",
+    "icon": "bot"
+  },
+  {
+    "sha": "e5e7b3fae0923860bd41a14771e98970ac59cdac",
+    "date": "2026-11-25",
+    "title": "Innovation Laboratory",
+    "summary": "Public AI experiences and practical evaluation guides.",
+    "url": "/lab/",
+    "icon": "flask-conical"
+  },
+  {
+    "sha": "9b86bf3d28d590ceeb08df56de47d892d6e6d70c",
+    "date": "2026-11-25",
+    "title": "Engineering services",
+    "summary": "Searchable capability and technical enquiry categories.",
+    "url": "/services/",
+    "icon": "code-xml"
+  },
+  {
+    "sha": "5231fc101da4efadc9c82e022f82baebb21fb0ce",
+    "date": "2026-11-25",
+    "title": "Developer documentation",
+    "summary": "Searchable architecture references and reviewed public source links.",
+    "url": "/docs/",
+    "icon": "book-open"
+  },
+  {
+    "sha": "1e56e7f1748b700966802cdba01cfc8929589259",
+    "date": "2026-11-25",
+    "title": "Technology and intelligence",
+    "summary": "Interactive project constellation and public roadmap evidence.",
+    "url": "/ecosystem/",
+    "icon": "layers"
+  },
+  {
+    "sha": "5feea2c2419c36611a0fd866271c69a84bfc91ed",
+    "date": "2026-11-25",
+    "title": "Engineering portfolios",
+    "summary": "Seven source-linked engineering case studies.",
+    "url": "/projects/",
+    "icon": "folder-code"
+  }
+]

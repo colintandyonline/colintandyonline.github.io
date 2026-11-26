@@ -44,6 +44,20 @@ function validateSource(){
   assert.ok(data.items.length > 0 && data.items.every(item => typeof item.title === "string" && ["Completed","In progress","Planned"].includes(item.stage)));
   for (const path of ["/roadmap.js","/showcase.js","/portfolio.js","/ecosystem.js","/docs.js","/services.js","/analytics-consent.js","/cora-guide.js","/engineering-motion.js"]) new Function(files.get(path).toString("utf8"));
   assert.equal(files.get("/assets/ctdg-logo.png").subarray(0,8).toString("hex"),"89504e470d0a1a0a");
+  // Approved visual baseline: only change artwork hashes with explicit brand approval.
+  for (const [path, hash] of [["/assets/ctdg-logo.png","a94aa5966f69b81abe28acc6a29fc199d842233fe3204b6b4f80a2db9513c484"],["/assets/icons.svg","a33f24fc24d8fa1d6e090639a1435ff415ac342d0f3ba338d7b6761d11dd660b"],["/assets/social-share.jpg","b9b1576e4ce76572c0cc9eb743b02d154798fd98b4a8b66d9709badc09254431"]]) assert.equal(createHash("sha256").update(files.get(path)).digest("hex"),hash,"Approved artwork changed: "+path);
+  const film=homepage.match(/<video id="engineering-intro-film"[^>]*>/)?.[0]||"";
+  assert.ok(film.includes("playsinline")&&!/\bmuted\b/.test(film),"Preserve unmuted native film");
+  assert.ok(homepage.includes("cora-engineering-film-v1/cora-engineering-1080p.mp4"));
+  for(const id of ["engineering-film-play","engineering-film-replay","engineering-film-full","engineering-motion-toggle"]) assert.ok(homepage.includes('id="'+id+'"'));
+  for(const path of ["/projects/","/lab/","/cora/","https://github.com/colintandyonline"]) assert.ok(homepage.includes('class="film-route" href="'+path+'"'));
+  const motion=files.get("/engineering-motion.js").toString("utf8"), css=files.get("/showcase.css").toString("utf8"), player=files.get("/showcase.js").toString("utf8");
+  assert.ok(player.includes("video.controls=false")&&player.includes("},5000)")&&!/video\.muted\s*=\s*true/.test(player));
+  for(const token of ["observatory","orbit","telemetry","precision","circuit","halo","network","prefers-reduced-motion"]) assert.ok(motion.includes(token),"Missing motion standard: "+token);
+  for(const token of ["ctdg-signal-travel","ctdg-node-breathe","ctdg-accent-card","prefers-reduced-motion"]) assert.ok(css.includes(token));
+  for(const [path, bytes] of files) if(path.endsWith(".html")) assert.ok(bytes.toString("utf8").includes('src="/engineering-motion.js"'),"Missing shared motion: "+path);
+  const projectRecords=JSON.parse(read("scripts/portfolio-records.json")); for(const r of projectRecords) assert.ok(motion.includes(JSON.stringify({slug:r.slug,title:r.title,project:r.project,color:r.color})),"Project accent drift: "+r.slug);
+  assert.ok(files.get("/intelligence/index.html").toString("utf8").includes('id="releases"'));
 }
 
 async function validateWorker(){
