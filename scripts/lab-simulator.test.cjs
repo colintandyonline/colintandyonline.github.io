@@ -1,0 +1,4 @@
+const test=require("node:test"),assert=require("node:assert/strict"),{run}=require("../lab.js");
+const expected={normal:{guarded:[1,1,1,"ok"],naive:[1,1,1,"ok"]},committed:{guarded:[1,1,1,"ok"],naive:[2,2,1,"warn"]},absent:{guarded:[1,2,1,"ok"],naive:[1,2,1,"warn"]},unknown:{guarded:[1,1,0,"hold"],naive:[2,2,1,"warn"]}};
+for(const [fault,policies] of Object.entries(expected))for(const [policy,want] of Object.entries(policies))test(fault+" / "+policy,()=>{const rows=run(fault,policy);assert.deepEqual(rows.map(x=>x.stage),["intake","write","verify","resolve"]);const last=rows.at(-1);assert.deepEqual([last.records,last.attempts,last.confirmed,last.state],want);assert.ok(rows.every(x=>x.confirmed<=x.records&&x.records<=x.attempts));assert.deepEqual(run(fault,policy),rows);});
+test("rejects unknown configuration",()=>assert.throws(()=>run("bad","guarded")));
