@@ -22,6 +22,7 @@ Public selected-source editions are not necessarily complete applications. Miles
 - [Engineering services](https://engineering.ctdigital.group/services/)
 - [Contact engineering](https://engineering.ctdigital.group/contact/)
 - [Innovation Laboratory](https://engineering.ctdigital.group/lab/)
+- [AI Orchestration Studio](https://engineering.ctdigital.group/lab/orchestration/)
 - [Cora engineering guided tour](https://engineering.ctdigital.group/cora/)
 - [AI Workforce and Training](https://engineering.ctdigital.group/workforce/)
 - [Engineering Journal](https://engineering.ctdigital.group/journal/)
