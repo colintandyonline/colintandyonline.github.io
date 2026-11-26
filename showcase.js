@@ -26,13 +26,21 @@ if(signals)fetch("roadmap.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Erro
 })();
 (function(){
 "use strict";
-const video=document.getElementById("engineering-intro-film"),button=document.getElementById("engineering-film-play"),status=document.getElementById("engineering-film-status");
-if(!video||!button||!status)return;
-function showPlay(){button.hidden=false;}
-function hidePlay(){button.hidden=true;status.hidden=true;}
-function failed(error){if(error?.name==="NotAllowedError"){showPlay();return;}if(error?.name==="AbortError")return;status.textContent="The introduction could not start. Please try the play control.";status.hidden=false;showPlay();}
-video.addEventListener("playing",hidePlay);
-video.addEventListener("error",()=>{status.textContent="The introduction is temporarily unavailable. Please try again.";status.hidden=false;showPlay();});
-button.addEventListener("click",()=>{video.play().catch(failed);});
-video.play().catch(failed);
+const video=document.getElementById("engineering-intro-film"),button=document.getElementById("engineering-film-play"),restart=document.getElementById("engineering-film-replay"),full=document.getElementById("engineering-film-full"),dock=document.getElementById("engineering-film-controls"),status=document.getElementById("engineering-film-status");
+if(!video||!button||!restart||!full||!dock||!status)return;
+let timer,manual=false;
+const label=button.querySelector("span"),path=button.querySelector("path");
+function state(){const active=!video.paused&&!video.ended;label.textContent=active?"Pause introduction":video.ended?"Replay introduction":"Play introduction";path.setAttribute("d",active?"M9 5v14m6-14v14":"m8 5 12 7-12 7z");}
+function message(text){status.textContent=text;status.hidden=!text;}
+function cancel(){manual=true;clearTimeout(timer);}
+function play(){if(video.ended)video.currentTime=0;video.play().catch(e=>{state();if(e?.name==="NotAllowedError")message("Select Play introduction to watch with sound.");else if(e?.name!=="AbortError")message("The introduction could not start. Select Play to try again.");});}
+button.addEventListener("click",()=>{cancel();if(video.paused||video.ended)play();else video.pause();});
+restart.addEventListener("click",()=>{cancel();video.currentTime=0;play();});
+const supportsFull=typeof video.requestFullscreen==="function"&&document.fullscreenEnabled||typeof video.webkitEnterFullscreen==="function";
+if(supportsFull){full.hidden=false;full.addEventListener("click",()=>{if(document.fullscreenElement){document.exitFullscreen().catch(()=>{});}else if(document.fullscreenEnabled&&video.requestFullscreen){video.requestFullscreen().catch(()=>{message("Fullscreen is unavailable in this browser.");});}else{try{video.webkitEnterFullscreen();}catch{message("Fullscreen is unavailable in this browser.");}}});}
+video.addEventListener("playing",()=>{message("");state();});
+video.addEventListener("pause",state);video.addEventListener("ended",state);video.addEventListener("error",()=>message("The introduction is temporarily unavailable."));
+video.controls=false;dock.hidden=false;state();
+function schedule(){if(!manual)timer=setTimeout(()=>{if(!manual&&video.paused&&!video.ended)play();},5000);}
+if(document.readyState==="complete")schedule();else window.addEventListener("load",schedule,{once:true});
 })();
