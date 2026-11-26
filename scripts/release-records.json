@@ -1,11 +1,75 @@
 [
   {
+    "sha": "c6f5366fb53a9583635aa8bc44f49ecaf4a03a7f",
+    "date": "2026-11-26",
+    "title": "Workflow recovery simulator",
+    "summary": "Interactive fault recovery and duplicate-protection comparison; reproducible model tests.",
+    "url": "/lab/#simulation",
+    "icon": "flask-conical",
+    "category": "lab"
+  },
+  {
+    "sha": "818e8e24f641fc7930c19c8d473453d742d105a9",
+    "date": "2026-11-26",
+    "title": "Engineering Journal and architecture",
+    "summary": "Journal features, project history, interactive components and Cora knowledge.",
+    "url": "/journal/",
+    "icon": "book-open",
+    "category": "journal"
+  },
+  {
+    "sha": "ba3b5b0d27e99ffb4019b2c65f45a91dbd28d8d0",
+    "date": "2026-11-26",
+    "title": "Engineering Workbench",
+    "summary": "Browser-based evidence, integration and retest exercises.",
+    "url": "/lab/#experiments",
+    "icon": "flask-conical",
+    "category": "lab"
+  },
+  {
+    "sha": "64947681732de3359886e434e670fcddb6ddb5b7",
+    "date": "2026-11-26",
+    "title": "Workforce development history",
+    "summary": "September and October records, individual origin histories and CTDG editorial voice.",
+    "url": "/workforce/#workforce-history",
+    "icon": "calendar-range",
+    "category": "workforce"
+  },
+  {
+    "sha": "08b86c6e4efde623e577ee88d001bbc92c7e7cdf",
+    "date": "2026-11-26",
+    "title": "Individual training evidence",
+    "summary": "Role-specific learning tracks, exercise outcomes, correction and retest evidence.",
+    "url": "/workforce/#training-benchmarks",
+    "icon": "shield-check",
+    "category": "workforce"
+  },
+  {
+    "sha": "84fec072b4b1e114b5b2fe129942dc57cc3792bb",
+    "date": "2026-11-26",
+    "title": "Workforce profiles and intelligence",
+    "summary": "Interactive profiles, review cadence, milestone distributions and departmental links.",
+    "url": "/workforce/",
+    "icon": "bot",
+    "category": "workforce"
+  },
+  {
+    "sha": "3ed52427a294e7af6930ab55f5ea9257a5d47f48",
+    "date": "2026-11-26",
+    "title": "AI workforce showcase",
+    "summary": "Public role explorer and documented training lifecycle.",
+    "url": "/workforce/",
+    "icon": "users",
+    "category": "workforce"
+  },
+  {
     "sha": "07cb7b02ff206b6a27701c94dff6d398345d2fa0",
     "date": "2026-11-26",
     "title": "Observatory motion system",
     "summary": "Page-specific animated signal pathways, project accents and consistent iconography.",
     "url": "/ecosystem/",
-    "icon": "network"
+    "icon": "network",
+    "category": "portfolio"
   },
   {
     "sha": "472d4c7e080e4c8494021448e1e4ba32d5ed38e7",
@@ -13,7 +77,8 @@
     "title": "Cora Engineering introduction",
     "summary": "Native cinematic hero with integrated controls and engineering navigation.",
     "url": "/",
-    "icon": "bot"
+    "icon": "bot",
+    "category": "cora"
   },
   {
     "sha": "29d8d2001c492d2480004aa1f3f48a55a2b77c8b",
@@ -21,7 +86,8 @@
     "title": "Cora guided experience",
     "summary": "Customer-focused guided journeys and practical frequently asked questions.",
     "url": "/cora/",
-    "icon": "bot"
+    "icon": "bot",
+    "category": "cora"
   },
   {
     "sha": "e5e7b3fae0923860bd41a14771e98970ac59cdac",
@@ -29,7 +95,8 @@
     "title": "Innovation Laboratory",
     "summary": "Public AI experiences and practical evaluation guides.",
     "url": "/lab/",
-    "icon": "flask-conical"
+    "icon": "flask-conical",
+    "category": "lab"
   },
   {
     "sha": "9b86bf3d28d590ceeb08df56de47d892d6e6d70c",
@@ -37,7 +104,8 @@
     "title": "Engineering services",
     "summary": "Searchable capability and technical enquiry categories.",
     "url": "/services/",
-    "icon": "code-xml"
+    "icon": "code-xml",
+    "category": "services"
   },
   {
     "sha": "5231fc101da4efadc9c82e022f82baebb21fb0ce",
@@ -45,7 +113,8 @@
     "title": "Developer documentation",
     "summary": "Searchable architecture references and reviewed public source links.",
     "url": "/docs/",
-    "icon": "book-open"
+    "icon": "book-open",
+    "category": "journal"
   },
   {
     "sha": "1e56e7f1748b700966802cdba01cfc8929589259",
@@ -53,7 +122,8 @@
     "title": "Technology and intelligence",
     "summary": "Interactive project constellation and public roadmap evidence.",
     "url": "/ecosystem/",
-    "icon": "layers"
+    "icon": "layers",
+    "category": "portfolio"
   },
   {
     "sha": "5feea2c2419c36611a0fd866271c69a84bfc91ed",
@@ -61,6 +131,7 @@
     "title": "Engineering portfolios",
     "summary": "Seven source-linked engineering case studies.",
     "url": "/projects/",
-    "icon": "folder-code"
+    "icon": "folder-code",
+    "category": "portfolio"
   }
 ]

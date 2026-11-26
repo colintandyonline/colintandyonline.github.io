@@ -25,3 +25,6 @@ Public selected-source editions are not necessarily complete applications. Miles
 - [Cora engineering guided tour](https://engineering.ctdigital.group/cora/)
 - [AI Workforce and Training](https://engineering.ctdigital.group/workforce/)
 - [Engineering Journal](https://engineering.ctdigital.group/journal/)
+- [Confidence is not an acceptance test](https://engineering.ctdigital.group/journal/evidence-not-confidence/)
+- [The handoff is where a workflow earns its keep](https://engineering.ctdigital.group/journal/handoffs-not-more-tools/)
+- [A lesson should leave more than a completed checkbox](https://engineering.ctdigital.group/journal/learning-that-leaves-evidence/)

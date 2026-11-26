@@ -7,7 +7,7 @@ export const footer='<footer class="corporate-footer"><div class="footer-shell">
 export function applyChrome(html){
  assert.equal((html.match(/<footer\b/g)||[]).length,1,"Expected one footer");
  html=html.replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/,()=>footer);
- const current=html.includes('rel="canonical" href="'+site+'/workforce/"'),intel=html.includes('rel="canonical" href="'+site+'/intelligence/"'),journal=html.includes('rel="canonical" href="'+site+'/journal/"');
+ const current=html.includes('rel="canonical" href="'+site+'/workforce/"'),intel=html.includes('rel="canonical" href="'+site+'/intelligence/"'),journal=html.includes('rel="canonical" href="'+site+'/journal/');
  html=html.replace(/<header>[\s\S]*?<\/header>/,head=>{
   head=head.replace(/<details class="intelligence-nav">[\s\S]*?<\/details>/g,()=>'<a href="/intelligence/">'+icon("chart-no-axes-combined")+'<span>Intelligence</span></a>');
   return head.replace(/<a href="\/intelligence\/"(?: aria-current="page")?>[\s\S]*?<\/a>/,()=>'<details class="intelligence-nav"><summary'+(current||intel||journal?' class="nav-current"':'')+'>'+icon("chart-no-axes-combined")+'<span>Intelligence</span><span class="nav-caret" aria-hidden="true"></span></summary><div class="intelligence-menu"><a href="/intelligence/"'+(intel?' aria-current="page"':'')+'>'+icon("activity")+'<span>Engineering Intelligence</span></a><a href="/workforce/"'+(current?' aria-current="page"':'')+'>'+icon("bot")+'<span>AI Workforce &amp; Training</span></a><a href="/journal/"'+(journal?' aria-current="page"':"")+' >'+icon("book-open")+'<span>Engineering Journal</span></a></div></details>');

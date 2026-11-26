@@ -19,6 +19,30 @@
         "Reviewed recovery records describe unsupported evidence claims and incomplete retests. Corrective work included tighter receipt checks and explicit handling of missing information. The important question is not whether an instruction was added, but whether an independently assessed retest exercises the original failure. If the result is missing, we should say so. A system that can admit what it cannot establish is far more useful than one that supplies a plausible explanation every time."
       ],
       [
+        "A useful answer starts with a claim that can be checked",
+        "Suppose a reception assistant is asked whether an enquiry has been dealt with. There are several perfectly different facts hiding inside that question: an enquiry exists, somebody has read it, a response has been drafted, a message has been sent, and the recipient has received it. A system can have evidence for the first two without having evidence for any of the others. Treating the entire sequence as a single completed status creates an attractive dashboard and a rather awkward conversation when the customer calls again.\n\nOur preferred approach is to make each significant claim small enough to check. For a fictional example, receipt E01 says the enquiry exists and awaits review; E02 says no delivery confirmation was returned. The defensible statement is that the enquiry exists and delivery is unverified. It would be equally wrong to claim a successful delivery or a definite connector failure. Neither conclusion follows from those two records. The correct answer can be less exciting than the imagined one, but it is a much better foundation for somebody's next decision."
+      ],
+      [
+        "What independent assessment is actually assessing",
+        "Quality and accuracy concern whether the answer matches the relevant source. Task completion concerns whether the requested work is actually present. Instruction following and operating discipline ask whether the work stayed within its stated boundaries. Governance and safety address actions that need permission. Efficiency asks whether the work used a sensible process, while handoff and escalation quality concern whether the next person has the information they need. These are the seven dimensions published in our workforce framework.\n\nWhy have more than one dimension? An assistant might write a technically correct explanation while missing half the requested deliverable. Another might produce a complete document with an unsupported assertion buried in a footnote. A third might arrive at a reasonable conclusion by taking an action that was never authorised. A single score can conceal very different failure modes. The evaluation should help us decide what to improve, not merely tell us which number to put beside a name."
+      ],
+      [
+        "How to read the numbers without overselling them",
+        "The 136 training-labelled attempts in the published November snapshot contain 115 completed assessments. Of those assessments, 109 met their task standard and six fell below it. The other 21 attempts did not complete execution. If we want to discuss assessment outcomes, the appropriate denominator is 115; if we want to discuss the ability to complete the exercise and reach an accepted assessment, the denominator is 136. Neither denominator establishes the percentage of agents certified for unrestricted work.\n\nThe distinction is not academic. A model-service interruption can prevent an otherwise useful exercise from being evaluated. Conversely, a completed task with a below-standard independent assessment tells us there is something to investigate in the submitted work. Combining those into one undifferentiated failure category obscures what needs attention. This is why the public workforce profiles keep execution outcomes, assessment outcomes and subsequent recovery evidence separate. The dataset is a dated record of internal exercises, not a controlled comparison of competing models or a prediction of customer outcomes."
+      ],
+      [
+        "A correction needs a way to prove it worked",
+        "Imagine an assessment discovers that an assistant cites a record which does not contain the field it claims to have seen. Writing another instruction to be careful with sources is a reasonable start, but it is not a convincing acceptance test. A stronger exercise gives the assistant one supported fact, one missing field and an attractive but unsupported inference. The evaluator checks the answer against the available record and looks for explicit acknowledgement of the missing field. A second case should test that the assistant can still report the supported facts instead of becoming so cautious that it stops doing useful work.\n\nThe public recovery records include work on exact receipt matching, retained retest instructions and explicit no-write attestations. Some later retests were accepted; others remained incomplete. We should not transfer a successful result from one specialist to another, or infer successful recovery merely because an instruction or source check was changed. A controlled retest needs a result. An authorised return to service is a separate decision. Keeping those steps distinct makes it possible to investigate recurring problems without retrospectively making the history look tidier."
+      ],
+      [
+        "How we would design a bounded acceptance exercise",
+        "A useful test specification identifies the task, the authorised actions, the expected evidence and the failure conditions before the exercise begins. For a read-only inspection, an acceptance condition could require each material observation to match a supplied field, each unknown to be explicitly marked, and any recommended consequential action to be presented for review rather than performed. Negative cases should include contradictory records and unavailable sources. A normal case should establish that the assistant can still complete the useful part of the task.\n\nA reproducible test also needs to say what it does not establish. Passing a fixed fictional scenario does not prove general reasoning ability, a production integration or safe operation in every environment. It demonstrates a particular outcome under the stated conditions. This is the distinction between our public Workbench exercises and our actual historical workforce assessment records. Visitors can inspect the former without exposing the latter's private prompts or internal evidence receipts."
+      ],
+      [
+        "What to ask before buying an AI capability",
+        "If a supplier says an assistant is reliable, ask what it was asked to do, what evidence was available, what happened when the evidence was missing and who decided whether it passed. Ask how a mistaken claim is investigated, and whether the system can stop when a consequential action requires approval. These questions are more useful than asking which model has the largest score on an unrelated benchmark.\n\nThe business objective is not to turn every assistant into an auditor. It is to make the work sufficiently dependable for its intended use. Some tasks need a simple check; others deserve an independent review and a carefully bounded rollout. We would rather begin with a narrow capability that can show its work than a long list of capabilities with no way of knowing whether they are ready. That gives the customer and the engineering team a sensible way to discuss the next improvement."
+      ],
+      [
         "Try it yourself",
         "Our browser-based Workbench gives visitors fictional records and a fixed answer key. It is not a live model test; it is a way to see why matching a claim to evidence matters before we let a workflow make a decision."
       ]
@@ -36,7 +60,32 @@
         "Try the evidence exercise",
         "/lab/#experiments"
       ]
-    ]
+    ],
+    "visual": {
+      "accent": "#16834B",
+      "label": "AI assurance",
+      "kind": "assessment",
+      "figTitle": "136 recorded training attempts",
+      "caption": "Dated November workforce snapshot. Task outcomes are not individual certification or a production benchmark.",
+      "items": [
+        [
+          "Met task standard",
+          109,
+          "#39ca93"
+        ],
+        [
+          "Below task standard",
+          6,
+          "#F38020"
+        ],
+        [
+          "Incomplete execution",
+          21,
+          "#9baec8"
+        ]
+      ]
+    },
+    "words": 1250
   },
   {
     "slug": "handoffs-not-more-tools",
@@ -58,6 +107,34 @@
         "A public demo can show a useful journey without proving that every production system is integrated. Our Interactive Demos portfolio makes this distinction explicit: selected public HTML provides interface evidence; the live experience is separate. Axiom Architect's documented workflow describes intake, diagnosis and an implementation blueprint rather than promising that every step is operational in every environment."
       ],
       [
+        "The missing response is not a missing record",
+        "Consider a fictional enquiry with identifier SIM-104. The sender creates a request and waits. The receiving system writes the record but the connection drops before the response comes back. The sender now knows that the request was attempted, not whether it succeeded. The receiving system knows a record exists, but the sender has not obtained that evidence. This disagreement between what happened and what the caller can establish is the interesting part of the problem.\n\nIt is tempting to add a retry button and move on. But if pressing that button generates a completely new request identifier, the receiver may treat the second request as a new customer enquiry. The second request can return a perfectly valid success response. At that point the sender has a green tick and the business has two records. The integration appears healthy precisely when it has created extra work. The problem is not that a retry exists; it is that the retry has no agreed relationship to the original request."
+      ],
+      [
+        "The contract behind a safe retry",
+        "Idempotency means that repeating an operation under a defined contract does not produce additional unintended effects. A stable request key can support that contract when the receiving service recognises it, associates it with the original operation and handles repeated submissions consistently. Merely sending a header called an idempotency key does not establish that guarantee. The receiving system must implement and document the behaviour.\n\nA practical design also needs to consider what happens if the same key is used with different contents, how long the key remains meaningful and whether an accepted request can still be processing when a lookup is made. In the simplified browser simulator we assume an authoritative lookup, a stable key honoured by the service and a successful bounded retry when the record is absent. Those assumptions are deliberately visible. A real integration needs its own tests against the receiving contract before an engineer can rely on the same behaviour."
+      ],
+      [
+        "The four situations worth testing first",
+        "In the normal case a confirmation arrives with a matching record reference, so there is no reason to retry. In the second case the record has been created but the response is lost. A lookup using the original key establishes its existence and avoids a new write. In the third case the first write never creates the record; a reliable lookup can establish absence, after which a bounded retry can proceed under the agreed contract. In the fourth case the lookup itself is unavailable. There is no reliable basis for claiming either success or absence, so the guarded path stops and hands off an unresolved state.\n\nThe simulator runs the guarded path and a blind-retry comparison together. The same initial conditions go into both paths. The resulting counts show the difference between write attempts, records actually created in the fictional model and records confirmed to the caller. That last distinction is important: the model can reveal ground truth for educational purposes, whereas a real sender cannot simply inspect an invisible database after a timeout. It must obtain evidence from an authorised system."
+      ],
+      [
+        "What the next person needs to know",
+        "A handoff is not a dump of every log line. It is a compact account of the operation, its current evidence, what remains unknown, any previous attempts and the next decision. For an unresolved enquiry, that could be the original correlation key, the last observed response and the fact that the verification service is unavailable. It should make clear that no new request has been authorised and that a responsible person needs to inspect the original record before deciding what to do.\n\nA good handoff also avoids the opposite failure: creating an exception queue that nobody owns. The business needs to agree who can investigate, when escalation is appropriate and what evidence is needed to close the exception. Technical retry limits without an accountable owner simply move the unresolved work into another system. The aim is to reduce manual work while preserving a way to recover when automation reaches the limits of its evidence."
+      ],
+      [
+        "Testing the uncomfortable paths",
+        "A useful integration test suite should include an ordinary success, a timeout before a write, a timeout after a write and unavailable verification. It should check that repeated submissions using the same request identity do not create unexpected records under the stated service contract. A negative test should demonstrate what happens when a different identity is used. The engineering team should inspect both the returned response and the resulting state rather than assuming that an HTTP success alone establishes the full business outcome.\n\nFor production, further questions arise around concurrent requests, delayed processing, permission changes, expiry of deduplication records and recovery after a restart. These are proposed acceptance cases, not a claim that every CTDG integration currently passes them. The public Workbench tests the deliberately small deterministic model. A customer implementation requires a separate, bounded verification exercise with its own service contract and acceptance criteria. This distinction keeps a useful educational example from turning into an unsupported reliability guarantee."
+      ],
+      [
+        "How the same principle applies beyond enquiries",
+        "The June Axiom Architect history records work on proposal payment synchronisation, verification and hardening. We can inspect those commits as historical engineering checkpoints. A payment interface is a particularly good reminder that a successful screen action and a confirmed downstream business state are different things. We do not infer a successful live transaction from the presence of an audit or a source file. The source history tells us what was developed; actual payment evidence is a separate matter.\n\nSimilar questions apply to bookings, onboarding, document delivery and support tickets. Which system is authoritative? What identifies the same operation? What confirms completion? What happens if the response is missing? Who owns an exception? Asking those questions before buying another integration tool often gives a better starting point than drawing a larger diagram. The diagram becomes useful when each arrow has a defined responsibility, a record of what crossed it and a way to handle an unsuccessful handoff."
+      ],
+      [
+        "A useful automation discussion",
+        "Before we propose an automation, we want to understand what the existing business does when something goes wrong. The apparently small exceptions often reveal the real requirements: people reconcile duplicate records, check a payment manually or contact somebody because a confirmation never arrived. Making that work visible is a better starting point than promising to replace it with an assistant.\n\nThe simulator is an invitation to try this thinking without touching a live service. Select a fault and watch the two policies respond automatically. Then ask which parts of the model would need to change for your own business. That is the beginning of a useful technical conversation, not a claim that a browser demonstration is a complete production integration."
+      ],
+      [
         "Make recovery visible",
         "When retries cannot establish an outcome, stop and surface the uncertainty. Give the responsible person enough context to decide what happens next. Our Workbench includes a fictional enquiry with an ambiguous integration response. It illustrates a wider engineering principle: make failures legible instead of hiding them behind another green status icon."
       ]
@@ -75,7 +152,33 @@
         "Workflow recovery exercise",
         "/lab/#experiments"
       ]
-    ]
+    ],
+    "visual": {
+      "accent": "#F38020",
+      "label": "Workflow reliability",
+      "kind": "flow",
+      "figTitle": "After a timeout: check before another write",
+      "caption": "Illustrative decision path. Retry safety depends on the actual receiving service contract.",
+      "items": [
+        [
+          "Request",
+          "Stable identity"
+        ],
+        [
+          "Timeout",
+          "Outcome unknown"
+        ],
+        [
+          "Lookup",
+          "Evidence available?"
+        ],
+        [
+          "Resolve",
+          "Confirm, retry or hand off"
+        ]
+      ]
+    },
+    "words": 1342
   },
   {
     "slug": "learning-that-leaves-evidence",
@@ -97,6 +200,34 @@
         "Our public portfolio shows Academy and sandbox routes and an AI-feedback route. This establishes selected implementation evidence, not that every lesson is shipped or that learners achieved a particular result. The same discipline applies to the workforce. September accountability records, October assessment events and November training attempts are different records; adding them together as though they were all completed lessons would make a very impressive and rather misleading number."
       ],
       [
+        "What should remain after the lesson is over?",
+        "A useful learning environment needs to distinguish several events that can look identical in a progress display. A learner opens a lesson. They read the material. They attempt a practical exercise. They receive feedback. They demonstrate the intended skill under the stated conditions. These are related, but they do not necessarily happen together. A completion marker is useful if its meaning is clear; it is misleading if it quietly stands for all five events at once.\n\nConsider a fictional exercise about evidence-based reporting. The learner is given three records and asked to decide whether an enquiry has been delivered. They choose the correct answer, perhaps because they understand the distinction between creation and delivery, or perhaps because they guessed. The feedback should explain why the answer is supported. A follow-up case changes the available evidence and asks for a new decision. That second exercise helps the learner test whether the reasoning transfers beyond the first question. It is more informative than simply awarding a mark for opening another screen."
+      ],
+      [
+        "What the May project history tells us",
+        "The public DeepMind Resources history includes three specific checkpoints: Academy practice improvement work and lesson progress persistence on 6 May 2026, followed by AI Fundamentals lesson completion stabilisation on 7 May. These are linked on the case study page. They tell us something concrete about the development process: practice, retained state and completion behaviour were areas of engineering work. They do not tell us how many people learned successfully or whether a particular learner achieved a particular capability.\n\nThat is an important distinction in a development journal. The existence of a progress-persistence commit is evidence of work on the system, not a measurement of the finished system's reliability. We can explain why this kind of work matters without inventing a learning outcome. When a learner returns to a course, the system needs to recover the correct state. When a practical exercise is repeated, the system needs to distinguish the previous attempt from the new attempt. When a completion is recorded, its definition needs to match what the application actually observed."
+      ],
+      [
+        "The difference between feedback and a verdict",
+        "Feedback helps somebody understand what to change. A verdict indicates whether a particular acceptance criterion has been met. Both have a place, but they are not interchangeable. A generic message that says excellent work is pleasant; a message that identifies the unsupported claim and the missing record is much more useful to the learner. A score without an explanation can be equally unhelpful if the person cannot work out what went wrong.\n\nThe same applies when evaluating AI specialists. The workforce's documented framework uses multiple assessment dimensions and task-specific thresholds. The public records separate below-standard assessments from interrupted executions. When corrective work is documented, the profiles distinguish a source correction, a controlled retest and any subsequent authorised recovery. This is a useful analogy for designing a learning system, but it does not mean that a human learner and an AI agent should be assessed in exactly the same way. The objectives, consequences and evidence must fit the particular setting."
+      ],
+      [
+        "How an exercise can be structured for repeatability",
+        "Start by specifying the objective in terms of a decision or deliverable that can be inspected. Supply the necessary information, including any deliberate ambiguity. Define the acceptance conditions in advance and make sure the exercise has enough information to support a defensible result. Provide feedback that connects the answer to those conditions. Allow a retry, ideally using a variation that tests the same principle in a slightly different situation.\n\nFor example, our public collaboration exercise presents fictional research, engineering and client-facing handoff records. The important learning objective is not to memorise which option number is correct. It is to understand why a possible integration approach is not a compatibility guarantee, why a bounded test needs the relevant system information and why drafting a client update is different from authorising an external commitment. The answer key is fixed and can be inspected in the repository. The exercise therefore has a clear limitation: it is testing decisions against the supplied scenario, not independently evaluating a model's general collaboration skills."
+      ],
+      [
+        "A record of improvement is not just a larger number",
+        "When our surviving workforce records begin on 29 September, they document ten accountability baselines and ten execution validations. October records include the further team expansion and fifty individual development plans. The later training-labelled snapshot contains different kinds of evidence, including completed assessments and incomplete executions. Adding all the personnel events to the exercise count would create a larger number, but it would not create more learning evidence.\n\nA meaningful historical view keeps the different record types distinct and links events where the evidence supports the relationship. An early assessment can identify a problem, later work can address it, and an independently reviewed result can provide evidence about the correction. If the linkage is missing, we should not invent a recovery narrative. That discipline is just as helpful for a learning platform: attendance, attempts, feedback and mastery evidence need clear meanings, and repeated events should not silently become additional completed lessons."
+      ],
+      [
+        "What to preserve in a learning application",
+        "From an engineering perspective, we would want a learning application to retain the identity of an exercise, the relevant version of its content, the attempt and its evaluation outcome. Otherwise a changed answer key can make an older result difficult to interpret. A retry should be distinguishable from the original attempt, and a learner should be able to understand what progress will be retained when they return. These are proposed design considerations, not claims about every component of DeepMind Resources.\n\nThe learner-facing experience should make the next useful action obvious. That might be continuing a lesson, reviewing feedback or trying a new example. It should not require navigating several screens just to establish whether the previous work was saved. This is one reason why the engineering journal now gives articles their own routes and the laboratory provides automatically running visual comparisons: the interface should reduce unnecessary work, even when the subject itself is technical."
+      ],
+      [
+        "Where the evidence leads next",
+        "The Academy and sandbox source references provide places to investigate the implementation. The published workforce framework provides an example of separating training events, assessment and governance. The Workbench provides a small environment in which visitors can try the underlying ideas themselves. Together they offer a more useful account of learning engineering than a promise that a platform makes everybody smarter.\n\nIf we were discussing a new learning system with a customer, we would start by asking what the learner should be able to do afterwards and what evidence would establish it. Then we would work out how the application can support practice, retain state and give useful feedback without inventing outcomes. A completion checkbox is perfectly acceptable when it represents a clearly defined event. It becomes valuable when the system can explain what that event means and what should happen next."
+      ],
+      [
         "A useful next step",
         "A learning journey should let somebody inspect an example, make a decision, understand the feedback and try again. Our Workbench follows that pattern using fictional exercises. Our public workforce profiles show development history, assessment outcomes and limitations separately. The objective is to let visitors see how we think about improvement, rather than merely telling them that improvement happens."
       ]
@@ -114,6 +245,32 @@
         "Engineering Workbench",
         "/lab/#experiments"
       ]
-    ]
+    ],
+    "visual": {
+      "accent": "#7F52FF",
+      "label": "Learning engineering",
+      "kind": "flow",
+      "figTitle": "A learning cycle that leaves evidence",
+      "caption": "Conceptual learning model; not measured outcomes for DeepMind Resources learners.",
+      "items": [
+        [
+          "Practice",
+          "Defined objective"
+        ],
+        [
+          "Review",
+          "Inspect result"
+        ],
+        [
+          "Feedback",
+          "Identify improvement"
+        ],
+        [
+          "Retry",
+          "New evidence"
+        ]
+      ]
+    },
+    "words": 1361
   }
 ]
