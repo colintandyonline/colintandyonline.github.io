@@ -1,0 +1,158 @@
+[
+  [
+    "javascript",
+    "JavaScript",
+    "JS",
+    "web",
+    "documented",
+    "Browser interaction and application logic.",
+    "The portfolio records link JavaScript to web, demo and mobile-related projects. Inspect the selected code before inferring full deployment."
+  ],
+  [
+    "html5",
+    "HTML5",
+    "HTML",
+    "web",
+    "documented",
+    "Accessible page structure and interactive experiences.",
+    "Documented in the website, demonstration and KayaCart public editions."
+  ],
+  [
+    "css3",
+    "CSS3",
+    "CSS",
+    "web",
+    "documented",
+    "Responsive layouts and visual states.",
+    "The website and interactive demo editions document CSS3."
+  ],
+  [
+    "typescript",
+    "TypeScript",
+    "TS",
+    "web",
+    "documented",
+    "Typed application and interface development.",
+    "Listed in Axiom Architect, DeepMind Resources and TrailTrade."
+  ],
+  [
+    "react",
+    "React",
+    "React",
+    "web",
+    "documented",
+    "Component-driven application interfaces.",
+    "Documented across the three TypeScript application portfolios."
+  ],
+  [
+    "nextjs",
+    "Next.js",
+    "Next.js",
+    "web",
+    "documented",
+    "Application routing and server-side interfaces.",
+    "The portfolio records describe the framework; a selected source edition does not prove every route is deployed."
+  ],
+  [
+    "tailwind",
+    "Tailwind CSS",
+    "Tailwind",
+    "web",
+    "documented",
+    "Styling for application interfaces.",
+    "Documented in Axiom Architect and DeepMind Resources."
+  ],
+  [
+    "kotlin",
+    "Kotlin",
+    "Kotlin",
+    "mobile",
+    "documented",
+    "Native Android application logic.",
+    "Selected budget tracking, assistant session and reminder components provide inspectable examples."
+  ],
+  [
+    "android",
+    "Android",
+    "Android",
+    "mobile",
+    "documented",
+    "Native mobile application platform.",
+    "KayaCart and Gandalf Mobile document Android development; current APK acceptance is separate."
+  ],
+  [
+    "compose",
+    "Jetpack Compose",
+    "Compose",
+    "mobile",
+    "documented",
+    "Native Android UI direction.",
+    "KayaCart documents the stack; selected public source is not the complete native application."
+  ],
+  [
+    "workers",
+    "Cloudflare Workers",
+    "Workers",
+    "infra",
+    "documented",
+    "Edge hosting and request handling.",
+    "The corporate website portfolio links reviewed Worker source and a verification workflow."
+  ],
+  [
+    "node",
+    "Node.js",
+    "Node.js",
+    "infra",
+    "documented",
+    "Server-side JavaScript services.",
+    "Listed in the Gandalf Mobile full-project stack; the selected edition does not establish the live bridge."
+  ],
+  [
+    "supabase",
+    "Supabase",
+    "Supabase",
+    "infra",
+    "documented",
+    "Application data and backend services.",
+    "Documented in DeepMind Resources and TrailTrade. No live database health claim is made."
+  ],
+  [
+    "stripe",
+    "Stripe",
+    "Stripe",
+    "infra",
+    "documented",
+    "Payment integration architecture.",
+    "Documented in TrailTrade. A stack entry is not proof of completed payments."
+  ],
+  [
+    "pipecat",
+    "Pipecat",
+    "Pipecat",
+    "voice",
+    "evaluation",
+    "Proposed evaluation of voice and multimodal pipelines.",
+    "Compare transport, turn-taking, provider adapters and resource consumption in a bounded prototype. No CTDG benchmark or adoption asserted.",
+    "https://github.com/pipecat-ai/pipecat"
+  ],
+  [
+    "livekit",
+    "LiveKit Agents",
+    "LiveKit",
+    "voice",
+    "evaluation",
+    "Proposed evaluation of real-time agent sessions.",
+    "Compare interruption handling, audio transport and web/mobile integration against the same test conditions. No prototype result asserted.",
+    "https://docs.livekit.io/agents/"
+  ],
+  [
+    "chatterbox",
+    "Chatterbox",
+    "Chatterbox",
+    "voice",
+    "research",
+    "Research candidate for optional engineering narration.",
+    "Investigate upstream maintenance, permitted voice reuse, hardware and speech latency before any experiment. No cloned voice or self-hosted deployment asserted.",
+    "https://github.com/resemble-ai/chatterbox"
+  ]
+]

@@ -17,6 +17,7 @@ Public selected-source editions are not necessarily complete applications. Miles
 - [DeepMind Resources](https://engineering.ctdigital.group/projects/deepmind-resources/)
 - [TrailTrade](https://engineering.ctdigital.group/projects/trailtrade/)
 - [Technology ecosystem](https://engineering.ctdigital.group/ecosystem/)
+- [Technology Radar and Research](https://engineering.ctdigital.group/research/)
 - [Engineering intelligence](https://engineering.ctdigital.group/intelligence/)
 - [Developer documentation](https://engineering.ctdigital.group/docs/)
 - [Engineering services](https://engineering.ctdigital.group/services/)
