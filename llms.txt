@@ -6,27 +6,27 @@ Public selected-source editions are not necessarily complete applications. Miles
 
 ## Public engineering references
 
-- [Engineering & Innovation](https://engineering.ctdigital.group/)
-- [Development roadmap](https://engineering.ctdigital.group/roadmap.html)
-- [Work portfolios](https://engineering.ctdigital.group/projects/)
-- [CTDG Website & Cora](https://engineering.ctdigital.group/projects/ctdg-website/)
-- [Interactive Demos](https://engineering.ctdigital.group/projects/interactive-demos/)
-- [KayaCart](https://engineering.ctdigital.group/projects/kayacart/)
-- [Gandalf Mobile](https://engineering.ctdigital.group/projects/gandalf-mobile/)
-- [Axiom Architect](https://engineering.ctdigital.group/projects/axiom-architect/)
-- [DeepMind Resources](https://engineering.ctdigital.group/projects/deepmind-resources/)
-- [TrailTrade](https://engineering.ctdigital.group/projects/trailtrade/)
-- [Technology ecosystem](https://engineering.ctdigital.group/ecosystem/)
-- [Technology Radar and Research](https://engineering.ctdigital.group/research/)
-- [Engineering intelligence](https://engineering.ctdigital.group/intelligence/)
-- [Developer documentation](https://engineering.ctdigital.group/docs/)
-- [Engineering services](https://engineering.ctdigital.group/services/)
-- [Contact engineering](https://engineering.ctdigital.group/contact/)
-- [Innovation Laboratory](https://engineering.ctdigital.group/lab/)
-- [AI Orchestration Studio](https://engineering.ctdigital.group/lab/orchestration/)
-- [Cora engineering guided tour](https://engineering.ctdigital.group/cora/)
-- [AI Workforce and Training](https://engineering.ctdigital.group/workforce/)
-- [Engineering Journal](https://engineering.ctdigital.group/journal/)
-- [Confidence is not an acceptance test](https://engineering.ctdigital.group/journal/evidence-not-confidence/)
-- [The handoff is where a workflow earns its keep](https://engineering.ctdigital.group/journal/handoffs-not-more-tools/)
-- [A lesson should leave more than a completed checkbox](https://engineering.ctdigital.group/journal/learning-that-leaves-evidence/)
+- [Engineering & Innovation](https://engineering.ctdigital.group/): Discover CT DIGITAL GROUP engineering projects, practical AI demonstrations and developer community.
+- [Development roadmap](https://engineering.ctdigital.group/roadmap.html): CT DIGITAL GROUP public development roadmap: source-backed milestones, verified historical evidence and progress across public engineering projects.
+- [Work portfolios](https://engineering.ctdigital.group/projects/): Explore CTDG source-backed engineering case studies, technology and development evidence.
+- [CTDG Website & Cora](https://engineering.ctdigital.group/projects/ctdg-website/): A corporate web experience that makes AI-enabled business capabilities understandable and provides a voice-and-chat reception entry point.
+- [Interactive Demos](https://engineering.ctdigital.group/projects/interactive-demos/): Public-facing demonstrations make AI reception and service journeys tangible through browser-based experiences.
+- [KayaCart](https://engineering.ctdigital.group/projects/kayacart/): Native Android shopping and household planning development, with selected budgeting code and a browser-based interface preview.
+- [Gandalf Mobile](https://engineering.ctdigital.group/projects/gandalf-mobile/): A native mobile-assistant engineering programme, represented publicly by Kotlin session and reminder components.
+- [Axiom Architect](https://engineering.ctdigital.group/projects/axiom-architect/): An AI-supported workflow architecture project for turning fragmented business processes into structured diagnostics and implementation blueprints.
+- [DeepMind Resources](https://engineering.ctdigital.group/projects/deepmind-resources/): A practical AI learning and resources platform that connects structured lessons, hands-on exercises and learner feedback.
+- [TrailTrade](https://engineering.ctdigital.group/projects/trailtrade/): A marketplace and live-show engineering programme represented by a curated React and TypeScript interface component collection.
+- [Technology ecosystem](https://engineering.ctdigital.group/ecosystem/): Interactive exploration of CTDG documented projects and technologies.
+- [Technology Radar and Research](https://engineering.ctdigital.group/research/): Explore CTDG documented technologies and proposed voice AI research, with source-backed project references and clear evidence boundaries.
+- [Engineering intelligence](https://engineering.ctdigital.group/intelligence/): Verified roadmap milestones, recorded project history and reviewed public source.
+- [Developer documentation](https://engineering.ctdigital.group/docs/): Search reviewed CTDG technical project references, documented architecture and public source.
+- [Engineering services](https://engineering.ctdigital.group/services/): Explore CTDG engineering enquiry categories for AI agents, integrations, applications, governance and technical research, with relevant source-backed project evidence.
+- [Contact engineering](https://engineering.ctdigital.group/contact/): Contact CTDG Engineering & Innovation for technical discovery, AI systems, application engineering, integrations and research partnerships.
+- [Innovation Laboratory](https://engineering.ctdigital.group/lab/): Explore CTDG public AI demonstrations, workflow automation, conversational AI and voice technology through a developer-focused evaluation laboratory.
+- [AI Orchestration Studio](https://engineering.ctdigital.group/lab/orchestration/): Watch a fictional AI specialist team coordinate research, engineering, evidence review and human decisions in an interactive visual simulation.
+- [Cora engineering guided tour](https://engineering.ctdigital.group/cora/): Meet Cora, your guide to CTDG engineering services, AI demonstrations, project portfolios, developer resources and technical enquiries.
+- [AI Workforce and Training](https://engineering.ctdigital.group/workforce/): Explore CTDG specialist AI workforce roles, team organisation, training lifecycle and verified governance controls.
+- [Engineering Journal](https://engineering.ctdigital.group/journal/): Practical CTDG engineering features on AI assurance, workflow architecture and learning systems, with public source evidence.
+- [Confidence is not an acceptance test](https://engineering.ctdigital.group/journal/evidence-not-confidence/): Why a convincing AI answer still needs evidence, and what our workforce training teaches us about judging it.
+- [The handoff is where a workflow earns its keep](https://engineering.ctdigital.group/journal/handoffs-not-more-tools/): A timeout, a duplicate record and an uncertain state are better architecture questions than a shiny integration diagram.
+- [A lesson should leave more than a completed checkbox](https://engineering.ctdigital.group/journal/learning-that-leaves-evidence/): The difference between delivering information, recording practice and establishing what has actually been learned.
