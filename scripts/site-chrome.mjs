@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import {applyStackColours} from "./stack-colours.mjs";
 const site="https://engineering.ctdigital.group";
 const icon=n=>'<svg class="ctdg-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#'+n+'"></use></svg>';
 const link=(url,label,i)=>'<a href="'+url+'">'+icon(i)+'<span>'+label+'</span></a>';
@@ -20,5 +21,5 @@ export function applyChrome(html){
  html=html.replace(/<meta property="og:(?:title|description|url)" content="[^"]*">/g,"");
  const image=site+"/assets/social-share.jpg";
  const meta='<!-- CTDG-SOCIAL-START --><link rel="icon" type="image/png" href="/assets/ctdg-logo.png"><link rel="apple-touch-icon" href="/assets/ctdg-logo.png"><meta property="og:type" content="website"><meta property="og:site_name" content="CTDG Engineering &amp; Innovation"><meta property="og:title" content="'+title.replace(/"/g,"&quot;")+'"><meta property="og:description" content="'+desc+'"><meta property="og:url" content="'+canonical+'"><meta property="og:image" content="'+image+'"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="CTDG Engineering &amp; Innovation — AI systems, automation and technical services"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="'+title.replace(/"/g,"&quot;")+'"><meta name="twitter:description" content="'+desc+'"><meta name="twitter:image" content="'+image+'"><meta name="twitter:image:alt" content="CTDG Engineering &amp; Innovation"><script src="/analytics-consent.js" defer></script><script src="/engineering-motion.js" defer></script><!-- CTDG-SOCIAL-END -->';
- return html.replace("</head>",()=>meta+"</head>");
+ return applyStackColours(html.replace("</head>",()=>meta+"</head>"));
 }

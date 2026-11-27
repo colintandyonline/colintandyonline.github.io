@@ -1,0 +1,66 @@
+{
+  "JavaScript": [
+    "#B49B00",
+    "#101820"
+  ],
+  "HTML5": [
+    "#E34F26",
+    "#fff"
+  ],
+  "CSS3": [
+    "#663399",
+    "#fff"
+  ],
+  "Cloudflare Workers": [
+    "#F38020",
+    "#101820"
+  ],
+  "Kotlin": [
+    "#7F52FF",
+    "#fff"
+  ],
+  "Android": [
+    "#16834B",
+    "#fff"
+  ],
+  "Jetpack Compose": [
+    "#4285F4",
+    "#fff"
+  ],
+  "Node.js": [
+    "#539E43",
+    "#fff"
+  ],
+  "TypeScript": [
+    "#3178C6",
+    "#fff"
+  ],
+  "React": [
+    "#087EA4",
+    "#fff"
+  ],
+  "Next.js": [
+    "#242424",
+    "#fff"
+  ],
+  "Tailwind CSS": [
+    "#0891B2",
+    "#fff"
+  ],
+  "Stripe": [
+    "#635BFF",
+    "#fff"
+  ],
+  "Supabase": [
+    "#168B68",
+    "#fff"
+  ],
+  "PowerShell": [
+    "#012456",
+    "#fff"
+  ],
+  "SQL": [
+    "#596579",
+    "#fff"
+  ]
+}

@@ -240,3 +240,24 @@ main :is(.work-card,.doc-entry,.service-card,.release-entry,.guide-project-card,
 @media(max-width:850px){.history-track{grid-template-columns:1fr}.history-stop:not(:last-child)::after{right:auto;left:26px;top:auto;bottom:-17px;width:1px;height:16px}}
 @media(max-width:380px){.wf-origin-history>div{grid-template-columns:1fr;gap:4px}}
 @media(prefers-reduced-motion:reduce){main :is(.service-symbol,.guide-project-symbol,.film-route-icon,.release-symbol,.wf-agent-icon){transition:none}}
+
+/* CTDG-STACK-COLOURS-START */
+:root{--stack-javascript:#B49B00;--stack-javascript-text:#101820;--stack-html5:#E34F26;--stack-html5-text:#fff;--stack-css3:#663399;--stack-css3-text:#fff;--stack-cloudflare-workers:#F38020;--stack-cloudflare-workers-text:#101820;--stack-kotlin:#7F52FF;--stack-kotlin-text:#fff;--stack-android:#16834B;--stack-android-text:#fff;--stack-jetpack-compose:#4285F4;--stack-jetpack-compose-text:#fff;--stack-node-js:#539E43;--stack-node-js-text:#fff;--stack-typescript:#3178C6;--stack-typescript-text:#fff;--stack-react:#087EA4;--stack-react-text:#fff;--stack-next-js:#242424;--stack-next-js-text:#fff;--stack-tailwind-css:#0891B2;--stack-tailwind-css-text:#fff;--stack-stripe:#635BFF;--stack-stripe-text:#fff;--stack-supabase:#168B68;--stack-supabase-text:#fff;--stack-powershell:#012456;--stack-powershell-text:#fff;--stack-sql:#596579;--stack-sql-text:#fff}
+[data-stack-tone="javascript"]{--stack-tone:var(--stack-javascript);--stack-text:var(--stack-javascript-text)}
+[data-stack-tone="html5"]{--stack-tone:var(--stack-html5);--stack-text:var(--stack-html5-text)}
+[data-stack-tone="css3"]{--stack-tone:var(--stack-css3);--stack-text:var(--stack-css3-text)}
+[data-stack-tone="cloudflare-workers"]{--stack-tone:var(--stack-cloudflare-workers);--stack-text:var(--stack-cloudflare-workers-text)}
+[data-stack-tone="kotlin"]{--stack-tone:var(--stack-kotlin);--stack-text:var(--stack-kotlin-text)}
+[data-stack-tone="android"]{--stack-tone:var(--stack-android);--stack-text:var(--stack-android-text)}
+[data-stack-tone="jetpack-compose"]{--stack-tone:var(--stack-jetpack-compose);--stack-text:var(--stack-jetpack-compose-text)}
+[data-stack-tone="node-js"]{--stack-tone:var(--stack-node-js);--stack-text:var(--stack-node-js-text)}
+[data-stack-tone="typescript"]{--stack-tone:var(--stack-typescript);--stack-text:var(--stack-typescript-text)}
+[data-stack-tone="react"]{--stack-tone:var(--stack-react);--stack-text:var(--stack-react-text)}
+[data-stack-tone="next-js"]{--stack-tone:var(--stack-next-js);--stack-text:var(--stack-next-js-text)}
+[data-stack-tone="tailwind-css"]{--stack-tone:var(--stack-tailwind-css);--stack-text:var(--stack-tailwind-css-text)}
+[data-stack-tone="stripe"]{--stack-tone:var(--stack-stripe);--stack-text:var(--stack-stripe-text)}
+[data-stack-tone="supabase"]{--stack-tone:var(--stack-supabase);--stack-text:var(--stack-supabase-text)}
+[data-stack-tone="powershell"]{--stack-tone:var(--stack-powershell);--stack-text:var(--stack-powershell-text)}
+[data-stack-tone="sql"]{--stack-tone:var(--stack-sql);--stack-text:var(--stack-sql-text)}
+main span[data-stack-tone]{display:inline-block;background:var(--stack-tone)!important;color:var(--stack-text)!important;border-color:var(--stack-tone)!important;border-radius:999px;padding:4px 9px;font-weight:600;white-space:normal}
+/* CTDG-STACK-COLOURS-END */
